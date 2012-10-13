@@ -4,7 +4,7 @@ Three-One-One is the non-emergency telephone number that provides municipal serv
 Got 311 lives on the web at [got311.org](http://got311.org/).
 
 ##Created by
-Got311 was designed, developed and currently maintained by [Luis Cielak](http://twitter.com/luiscielak/).
+Got 311 was designed, developed and currently maintained by [Luis Cielak](http://twitter.com/luiscielak/).
 
 
 
