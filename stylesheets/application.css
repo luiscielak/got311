@@ -1,8 +1,8 @@
-/*@import 'reset.css';*/
-/*@import 'common.css';*/
-/*@import 'normalize.css';*/
+@import 'reset.css';
+@import 'common.css';
+@import 'normalize.css';
 /*@import 'less/grid.less';*/
-/*@import 'assets/fonts/fonts.css';*/
+@import 'assets/fonts/fonts.css';
 
 
 /* fonts
@@ -14,162 +14,24 @@
 /* layouts
 -------------------------------------*/
 
+body {
+    font-size: 16px;
+}
+
+div {
+    margin-top: 6px;
+}
+
+
+
 /* general styles
 -------------------------------------*/
 
-/* custom classes
--------------------------------------*/
 /*
-    Classes that your likely to use all over your site, like rss links, or a button style or something
-    But not something thats going to be lots of lines of CSS - if it is, like 'calls to actions' in the right column,
-    make a module css, callsToActions.css and put it in the /modules/ folder (remember to link it in the cssLoader.css)
+    The base styles for the whole site, setting up base font styles/colors etc.
+    specific styles for specific areas done later to override these
+    some ultra basic form styles set up here too
 */
-
-a.btn-edit {    
-}
-    a.btn-edit:hover {    
-    }
-    
-a.btn-delete {    
-}
-    a.btn-delete:hover {    
-    }
-
-
-
-/* elements specific styles
--------------------------------------*/
-/* 
-    Styles for sitewide elements, like navigation, header, toolbars, footer.
-    Stuff that appears on most of the pages on a site.
-*/
-
-nav ul {
-}
-    nav ul li {
-    }
-        nav ul li a {   
-        }
-            nav ul li a:hover {
-            }
-
-footer {
-}
-    footer p {
-    }
-    footer ul {
-    }
-        footer ul li {
-        }
-            footer ul li a {
-            }
-                footer ul li a:hover {
-                }
-
-/* ie6 !ftw */
-div#ie {
-    background-color: #ffc;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    padding: 5px 0 0 0;
-    height: 20px;
-    text-align: center;
-}
-    div#ie p {
-        display: block;
-        color: #333;
-        font-size: 11px;
-        margin: 0;
-    }
-
-
-
-/* page specific styles
--------------------------------------*/
-
-
-
-
-
-
-
-
-
-/* Reset
--------------------------------------*/
-
-
-/* Fonts
-------------------------- */
-
-
-
-/* Basic Elements
--------------------------------------*/
-html {}
-
-body {}
-
-p {}
-
-
-
-/* Body and structure
--------------------------------------*/
-
-
-/* Navigation
-------------------------- */
-
-/* --- Global --- */
-
-/* --- Sitemap --- */
-
-
-/* Basic Layout
--------------------------------------*/
-
-/* Header
--------------------------------------*/
-
-/* --- Logo --- */
-
-
-/* Content
--------------------------------------*/
-
-/* --- Forms --- */
-
-/* --- Unsorted list --- */
-
-/* --- Numbered list --- */
-
-/* --- Tables --- */
-
-/* --- Icons in content --- */
-
-/* --- Photogallery --- */
-
-
-/* Sidebar
--------------------------------------*/
-
-
-/* Footer
--------------------------------------*/
-
-blockquote {
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Maven Pro';
-    text-indent: 0px;
-    font-size: 29.124px;
-    line-height: 47.123px;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
-    quotes: "" "";
-    margin-top: 25px;
-}
 
 h1 {
     font-size: 60px;
@@ -255,6 +117,52 @@ p {
     margin-top: 5px;
 }
 
+blockquote {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Maven Pro';
+    text-indent: 0px;
+    font-size: 29.124px;
+    line-height: 47.123px;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+    quotes: "" "";
+    margin-top: 25px;
+}
+        
+img {
+}
+
+small {
+    font-size: 11px;
+    color: #666;
+}
+
+abbr[title], acronym[title] {
+    cursor: help;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+}
+    
+a {
+    text-decoration: none;
+}
+    a:focus, a:active {
+        text-decoration: none;
+    }
+    a:hover {
+    }
+
+
+/* custom classes
+-------------------------------------*/
+
+/*
+    Classes that your likely to use all over your site, like rss links, or a button style or something
+    But not something thats going to be lots of lines of CSS - if it is, like 'calls to actions' in the right column,
+    make a module css, callsToActions.css and put it in the /modules/ folder (remember to link it in the cssLoader.css)
+*/
+
 h2.logo {
     font-style: normal;
     font-weight: 400;
@@ -264,12 +172,10 @@ h2.logo {
     line-height: 73px;
 }
 
-body {
-    font-size: 16px;
-}
-
-div {
-    margin-top: 6px;
+h4.intro {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 h5.intro {
@@ -287,12 +193,6 @@ h5.form {
     margin-bottom: 30px;
 }
 
-h4.intro {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
 h6.form {
     text-align: center;
     margin-top: 25px;
@@ -301,10 +201,63 @@ h6.form {
 }
 
 
+a.btn-edit {    
+}
+    a.btn-edit:hover {    
+    }
+    
+a.btn-delete {    
+}
+    a.btn-delete:hover {    
+    }
 
 
 
-/* Print styles
+
+/* elements specific styles
+-------------------------------------*/
+
+/* 
+    Styles for sitewide elements, like navigation, header, toolbars, footer.
+    Stuff that appears on most of the pages on a site.
+*/
+
+nav ul {
+}
+    nav ul li {
+    }
+        nav ul li a {   
+        }
+            nav ul li a:hover {
+            }
+
+footer {
+}
+    footer p {
+    }
+    footer ul {
+    }
+        footer ul li {
+        }
+            footer ul li a {
+            }
+                footer ul li a:hover {
+                }
+
+
+/* page specific styles
+-------------------------------------*/
+
+/*
+    If your site is small and didnt need modules or pages css documents, 
+    then here is where you'd put page specific css, else, make modules in
+    /pages/ and /modules/
+*/
+
+
+
+
+/* print styles
 -------------------------------------*/
 @media print {
 
