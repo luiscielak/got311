@@ -1,25 +1,162 @@
-@import 'reset.css';
-@import 'less/grid.less';
-@import 'assets/fonts/fonts.css';
+/*@import 'reset.css';*/
+/*@import 'common.css';*/
+/*@import 'normalize.css';*/
+/*@import 'less/grid.less';*/
+/*@import 'assets/fonts/fonts.css';*/
 
+
+/* fonts
+-------------------------------------*/
+
+/* body
+-------------------------------------*/
+
+/* layouts
+-------------------------------------*/
+
+/* general styles
+-------------------------------------*/
+
+/* custom classes
+-------------------------------------*/
 /*
-	Typography
+    Classes that your likely to use all over your site, like rss links, or a button style or something
+    But not something thats going to be lots of lines of CSS - if it is, like 'calls to actions' in the right column,
+    make a module css, callsToActions.css and put it in the /modules/ folder (remember to link it in the cssLoader.css)
 */
 
-
-h1 {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 50px;
-    font-style: normal;
-    font-weight: 700;
-    font-family: 'museo-slab';
-    text-transform: uppercase;
-    color: rgba(34, 34, 34, 0.9);
-    letter-spacing: -1px;
-    text-indent: 0px;
+a.btn-edit {    
 }
+    a.btn-edit:hover {    
+    }
+    
+a.btn-delete {    
+}
+    a.btn-delete:hover {    
+    }
 
+
+
+/* elements specific styles
+-------------------------------------*/
+/* 
+    Styles for sitewide elements, like navigation, header, toolbars, footer.
+    Stuff that appears on most of the pages on a site.
+*/
+
+nav ul {
+}
+    nav ul li {
+    }
+        nav ul li a {   
+        }
+            nav ul li a:hover {
+            }
+
+footer {
+}
+    footer p {
+    }
+    footer ul {
+    }
+        footer ul li {
+        }
+            footer ul li a {
+            }
+                footer ul li a:hover {
+                }
+
+/* ie6 !ftw */
+div#ie {
+    background-color: #ffc;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 5px 0 0 0;
+    height: 20px;
+    text-align: center;
+}
+    div#ie p {
+        display: block;
+        color: #333;
+        font-size: 11px;
+        margin: 0;
+    }
+
+
+
+/* page specific styles
+-------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* Reset
+-------------------------------------*/
+
+
+/* Fonts
+------------------------- */
+
+
+
+/* Basic Elements
+-------------------------------------*/
+html {}
+
+body {}
+
+p {}
+
+
+
+/* Body and structure
+-------------------------------------*/
+
+
+/* Navigation
+------------------------- */
+
+/* --- Global --- */
+
+/* --- Sitemap --- */
+
+
+/* Basic Layout
+-------------------------------------*/
+
+/* Header
+-------------------------------------*/
+
+/* --- Logo --- */
+
+
+/* Content
+-------------------------------------*/
+
+/* --- Forms --- */
+
+/* --- Unsorted list --- */
+
+/* --- Numbered list --- */
+
+/* --- Tables --- */
+
+/* --- Icons in content --- */
+
+/* --- Photogallery --- */
+
+
+/* Sidebar
+-------------------------------------*/
+
+
+/* Footer
+-------------------------------------*/
 
 blockquote {
     font-style: normal;
@@ -164,22 +301,14 @@ h6.form {
 }
 
 
-/* 
-	Responsive 
-*/
-article {
-   .column(6);
-}
-aside {
-   .column(6);
+
+
+
+/* Print styles
+-------------------------------------*/
+@media print {
+
+/* Your print styles go here */
 }
 
-@media screen and (max-width: 960px) {
-   article {
-      .column(12);
-   }
-   aside {
-      .column(12);
-   }
-}
 
