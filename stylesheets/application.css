@@ -2,21 +2,54 @@
 @import 'common.css';
 @import 'normalize.css';
 /*@import 'less/grid.less';*/
-@import 'assets/fonts/fonts.css';
+@import 'fonts/fonts.css';
 
-
-/* fonts
--------------------------------------*/
 
 /* body
--------------------------------------*/
-
-/* layouts
 -------------------------------------*/
 
 body {
     font-size: 16px;
 }
+
+
+/* layouts
+-------------------------------------*/
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left; /* you don't actually want the text to be aligned center, just this div */
+}
+    header {
+    }
+    
+    section {
+    }            
+        article {
+        }
+        aside {
+        }
+        
+        /*      
+        if you have floated columns inside of "section" (or some other element), putting "overflow: auto;" in "section" should clear the floats fine
+        but sometimes you need to be able to absolutly position elements outside of the element, overflow: auto; would draw scroll bars
+        in which case, for IE set the height of the element to be 1% (*height: 1%;) and uncomment the :after psuedo class stuff below
+        ( http://www.positioniseverything.net/easyclearing.html )
+        */      
+        
+        /*
+        section:after {
+            content: "."; 
+            display: block; 
+            height: 0; 
+            clear: both;
+            visibility: hidden;
+        }
+        */
+        
+    footer {
+    }
 
 div {
     margin-top: 6px;
