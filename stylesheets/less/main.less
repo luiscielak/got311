@@ -1,0 +1,139 @@
+@import 'grid.less';
+@import 'normalize.less';
+@import 'fonts/fonts.css';
+
+
+/* fonts 
+---------------------------- */
+@museo-sans: 'museo_sans_500regular';
+@museo-slab: 'MuseoSlab500Regular';
+@maven-pro:	'MavenProRegular';
+
+/* layout
+---------------------------- */
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+@total-width: 100%;		// Switch from pixels to percentages
+
+
+/* colors
+---------------------------- */
+
+/* basic elements
+---------------------------- */
+html, body {
+	font-family: @museo-sans, Helvetica, sans-serif;
+	// font: 18px/18px "Comic Sans MS";	
+	background-color: rgb(246,246,246);
+}
+
+
+#page {
+	margin: 0 auto;
+	max-width: 960px;	
+}	
+
+
+#logo {
+	color: rgb(246,246,246);
+}
+
+#logo h1 {
+	font-family: @maven-pro, Helvetica, sans-serif;
+}
+
+
+
+header {
+	.column(12);
+	height: 85px;
+	background-color: rgb(55,89,95);
+}
+
+article {
+	background-color: brown;
+}
+
+#intro {
+	height: 300px;
+	.column(12);
+}
+
+#intro h1 {
+	height: 120px;
+	background-color: red;
+	font-family: @museo-slab, Georgia, serif;
+}
+
+#intro h2 {
+	background-color: pink;
+}
+
+#intro h4 {
+	background-color: purple;
+}
+
+
+#locations {
+	.column(12);
+	background-color: yellow;
+	text-align: center;
+}
+
+#services {
+	.column(12);
+	background-color: green;
+}
+
+#services .grid {
+	.column(12);
+	background-color: red;
+	padding: 0 -5px 20px 20px;
+	
+
+}
+
+#services .grid img {
+	background-color: white;
+	padding: 4px;				// (?) maybe border instead?
+	margin: 0 0 0 12px; 
+}
+
+#resources {
+	.column(12);
+	background-color: navy;
+}
+
+
+#services blockquote {
+	.column(12);
+	text-align: center;
+	color: gray;
+	padding: 20px 0 20px 0;
+}
+
+blockquote {
+	.column(4);
+	background-color: white;
+}
+
+#resources .feature {
+	.push(2);
+	// .column(9);
+	background-color: red;
+}
+
+footer {
+	background-color: violet;
+
+}
+
+footer h1 {
+	font-weight: 100;
+	text-align: right;
+}
+
+
+
+

@@ -1,5 +1,3 @@
-body { font-family: 'MuseoSlab500Regular', Georgia, sans-serif; }
-
 /* Museo Sans 500 */
 
 @font-face {
@@ -68,6 +66,7 @@ body { font-family: 'MuseoSlab500Regular', Georgia, sans-serif; }
 
 }
 
+/*  DEPRECATE   */
 @font-face {
     font-family: 'MavenProBold';
     src: url('maven_pro_bold-webfont.eot');
