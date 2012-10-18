@@ -1,300 +1,69 @@
-@import 'reset.css';
-@import 'common.css';
-@import 'normalize.css';
-/*@import 'less/grid.less';*/
-@import 'fonts/fonts.css';
-
-
-/* body
--------------------------------------*/
-
 body {
-    font-size: 16px;
+  width: 100%;
+  *zoom: 1;
 }
-
-
-/* layouts
--------------------------------------*/
-
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+html,
+body {
+  font: 18px/18px "Comic Sans MS";
+}
 #page {
-    width: 960px;
-    margin: 0 auto;
-    text-align: left; /* you don't actually want the text to be aligned center, just this div */
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: gray;
 }
-    header {
-    }
-    
-    section {
-    }            
-        article {
-        }
-        aside {
-        }
-        
-        /*      
-        if you have floated columns inside of "section" (or some other element), putting "overflow: auto;" in "section" should clear the floats fine
-        but sometimes you need to be able to absolutly position elements outside of the element, overflow: auto; would draw scroll bars
-        in which case, for IE set the height of the element to be 1% (*height: 1%;) and uncomment the :after psuedo class stuff below
-        ( http://www.positioniseverything.net/easyclearing.html )
-        */      
-        
-        /*
-        section:after {
-            content: "."; 
-            display: block; 
-            height: 0; 
-            clear: both;
-            visibility: hidden;
-        }
-        */
-        
-    footer {
-    }
-
-div {
-    margin-top: 6px;
+header {
+  display: inline;
+  float: left;
+  width: 78.33333333333333%;
+  margin: 0 0.8333333333333333%;
+  background-color: orange;
 }
-
-
-
-/* general styles
--------------------------------------*/
-
-/*
-    The base styles for the whole site, setting up base font styles/colors etc.
-    specific styles for specific areas done later to override these
-    some ultra basic form styles set up here too
-*/
-
-h1 {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 50px;
-    font-style: normal;
-    font-weight: 700;
-    font-family: 'MuseoSlab500Regular';
-    text-transform: uppercase;
-    color: rgba(34, 34, 34, 0.9);
-    letter-spacing: -1px;
-    text-indent: 0px;
+article {
+  display: inline;
+  float: left;
+  width: 38.333333333333336%;
+  margin: 0 0.8333333333333333%;
+  background-color: red;
 }
-
-h2 {
-    font-size: 47.123px;
-    line-height: 47.123px;
-    margin-bottom: 25px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: 'MuseoSlab500Regular';
-    text-transform: capitalize;
-    margin-top: 0px;
-    letter-spacing: -1px;
+aside {
+  display: inline;
+  float: left;
+  width: 38.333333333333336%;
+  margin: 0 0.8333333333333333%;
 }
-
-h3 {
-    font-size: 37.083px;
-    line-height: 37.083px;
-    margin-bottom: 25px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: 'museo_sans_500regular';
-    letter-spacing: 0px;
+section {
+  display: inline;
+  float: left;
+  width: 18.333333333333332%;
+  margin: 0 0.8333333333333333%;
+  background-color: green;
 }
-
-h4 {
-    margin-bottom: 25px;
-    font-family: 'MuseoSlab500Regular';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 37.083px;
-    line-height: 37.083px;
-    letter-spacing: 0px;
-    text-align: left;
-    margin-top: 0px;
-}
-
-h5 {
-    margin-bottom: 25px;
-    font-style: italic;
-    font-weight: 300;
-    font-family: 'museo_sans_500regular';
-    font-size: 29.124px;
-    line-height: 47.123px;
-    letter-spacing: 0px;
-    text-indent: 0px;
-    text-align: left;
-    margin-top: 0px;
-}
-
-h6 {
-    font-weight: 500;
-    font-style: italic;
-    font-family: 'MuseoSlab500Regular';
-    margin-bottom: 25px;
-    font-size: 22.919px;
-    line-height: 22.919px;
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 0px;
-    letter-spacing: 1px;
-}
-
-p {
-    margin-bottom: 25px;
-    font-style: normal;
-    font-weight: 300;
-    font-family: 'museo_sans_500regular';
-    font-size: 18px;
-    line-height: 22.919px;
-    text-align: left;
-    margin-top: 5px;
-}
-
 blockquote {
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Maven Pro';
-    text-indent: 0px;
-    font-size: 29.124px;
-    line-height: 47.123px;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
-    quotes: "" "";
-    margin-top: 25px;
+  display: inline;
+  float: left;
+  width: 25%;
+  margin: 0 0.8333333333333333%;
+  background-color: white;
 }
-        
-img {
+@media screen and (max-width: 960px) {
+  background-color: blue;article {
+    display: inline;
+    float: left;
+    width: 78.33333333333333%;
+    margin: 0 0.8333333333333333%;
+  }
+  aside {
+    display: inline;
+    float: left;
+    width: 78.33333333333333%;
+    margin: 0 0.8333333333333333%;
+  }
 }
-
-small {
-    font-size: 11px;
-    color: #666;
-}
-
-abbr[title], acronym[title] {
-    cursor: help;
-    color: #fff;
-    border-bottom: 1px dotted #fff;
-}
-    
-a {
-    text-decoration: none;
-}
-    a:focus, a:active {
-        text-decoration: none;
-    }
-    a:hover {
-    }
-
-
-/* custom classes
--------------------------------------*/
-
-/*
-    Classes that your likely to use all over your site, like rss links, or a button style or something
-    But not something thats going to be lots of lines of CSS - if it is, like 'calls to actions' in the right column,
-    make a module css, callsToActions.css and put it in the /modules/ folder (remember to link it in the cssLoader.css)
-*/
-
-h2.logo {
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Maven Pro';
-    font-size: 54px;
-    text-transform: none;
-    line-height: 73px;
-}
-
-h4.intro {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-h5.intro {
-    text-align: left;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    background:red;
-}
-
-h5.form {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-h6.form {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 22.919px;
-    line-height: 22.919px;
-}
-
-
-a.btn-edit {    
-}
-    a.btn-edit:hover {    
-    }
-    
-a.btn-delete {    
-}
-    a.btn-delete:hover {    
-    }
-
-
-
-
-/* elements specific styles
--------------------------------------*/
-
-/* 
-    Styles for sitewide elements, like navigation, header, toolbars, footer.
-    Stuff that appears on most of the pages on a site.
-*/
-
-nav ul {
-}
-    nav ul li {
-    }
-        nav ul li a {   
-        }
-            nav ul li a:hover {
-            }
-
-footer {
-}
-    footer p {
-    }
-    footer ul {
-    }
-        footer ul li {
-        }
-            footer ul li a {
-            }
-                footer ul li a:hover {
-                }
-
-
-/* page specific styles
--------------------------------------*/
-
-/*
-    If your site is small and didnt need modules or pages css documents, 
-    then here is where you'd put page specific css, else, make modules in
-    /pages/ and /modules/
-*/
-
-
-
-
-/* print styles
--------------------------------------*/
-@media print {
-
-/* Your print styles go here */
-}
-
-
