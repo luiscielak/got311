@@ -1,5 +1,5 @@
 @import 'grid.less';
-@import 'normalize.less';
+// @import 'normalize.less';
 @import 'fonts/fonts.css';
 
 
@@ -9,8 +9,7 @@
 @museo-slab: 'MuseoSlab500Regular';
 @maven-pro:	'MavenProRegular';
 
-
-/* grid
+/* layout
 ---------------------------- */
 @columns: 12;
 @column-width: 60;
@@ -33,304 +32,93 @@
 ---------------------------- */
 html, body {
 	font-family: @museo-sans, Helvetica, sans-serif;
-	font: 16px/16px;	
-	background-color: @white;
+	// font: 18px/18px "Comic Sans MS";	
+	background-color: rgb(246,246,246);
 }
 
-
-/* layouts
----------------------------- */
-/* 
-    Here just a common layout type is pre-written, whole site wrapper, header, nav, content with left and right and a footer.
-    Change these as needed :-)
-    If you have a persistant toolbar at the top of the screen, or banners at the top of the screen, semantically you'll probably want
-    these below the content in the DOM, so absolutly position them to the top. Remember to padding-top the #container
-*/
 
 #page {
 	margin: 0 auto;
 	max-width: 960px;	
 }	
 
-	header {
-		.column(12);
-		height: 85px;
-		background-color: @steelblue;
-	}
 
-		header h1 {
-			color: @white;
-			font-family: @maven-pro, Helvetica, sans-serif;
-		    font-style: normal;
-		    font-weight: 400;
-		    font-family: @maven-pro;
-		    font-size: 54px;
-		    text-transform: none;
-		    line-height: 73px;	
-		}
-
-	section {
-	}
-
-		article {
-			background-color: @white;
-		}
-
-		aside {
-		}
-
-
-	footer {
-		background-color: @steelblue;
-		clear: both;
-	}
-
-
-
-/* general styles
----------------------------- */
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {
-	font-size: 18px;
-	line-height: 18px;
-	margin: 0;
-	font-weight: normal;
+#logo {
+	color: rgb(246,246,246);
 }
 
-
-	h1 {
-	    font-size: 60px;
-	    line-height: 60px;
-	    margin-bottom: 50px;
-	    font-style: normal;
-	    font-weight: 700;
-	    font-family: @museo-slab;
-	    text-transform: uppercase;
-	    color: rgba(34, 34, 34, 0.9);
-	    letter-spacing: -1px;
-	    text-indent: 0px;
-	}
-
-	h2 {
-	    font-size: 47.123px;
-	    line-height: 47.123px;
-	    margin-bottom: 25px;
-	    font-style: normal;
-	    font-weight: 500;
-	    font-family: @museo-slab;
-	    text-transform: capitalize;
-	    margin-top: 0px;
-	    letter-spacing: -1px;
-	}
-
-	h3 {
-	    font-size: 37.083px;
-	    line-height: 37.083px;
-	    margin-bottom: 25px;
-	    font-style: normal;
-	    font-weight: 500;
-	    font-family: @museo-sans;
-	    letter-spacing: 0px;
-	}
-
-	h4 {
-	    margin-bottom: 25px;
-	    font-family: @museo-slab;
-	    font-weight: 500;
-	    font-style: normal;
-	    font-size: 37.083px;
-	    line-height: 37.083px;
-	    letter-spacing: 0px;
-	    text-align: left;
-	    margin-top: 0px;
-	}
-
-	h5 {
-	    margin-bottom: 25px;
-	    font-style: italic;
-	    font-weight: 300;
-	    font-family: @museo-sans;
-	    font-size: 29.124px;
-	    line-height: 47.123px;
-	    letter-spacing: 0px;
-	    text-indent: 0px;
-	    text-align: left;
-	    margin-top: 0px;
-	}
-
-	h6 {
-	    font-weight: 500;
-	    font-style: italic;
-	    font-family: @museo-slab;
-	    margin-bottom: 25px;
-	    font-size: 22.919px;
-	    line-height: 22.919px;
-	    text-transform: uppercase;
-	    text-align: left;
-	    margin-top: 0px;
-	    letter-spacing: 1px;
-	}
-    ul li {
-		list-style-type: none;
-	}
-	ol li {
-	}
-
-p {
-    margin-bottom: 25px;
-    font-style: normal;
-    font-weight: 300;
-    font-family: @museo-sans;
-    font-size: 18px;
-    line-height: 22.919px;
-    text-align: left;
-    margin-top: 5px;
+#logo h1 {
+	font-family: @maven-pro, Helvetica, sans-serif;
 }
 
-blockquote {
-	.column(4);
-	background-color: @opaque;
+header {
+	.column(12);
+	height: 85px;
+	background-color: @steelblue;
 }
 
-img {
+article {
+	background-color: @white;
 }
 
-small {
-	font-size: 11px;
-    color: #666;
-}
-
-abbr[title], acronym[title] {
-	cursor: help;
-	color: #fff;
-	border-bottom: 1px dotted #fff;
-}
-	
-a {
-	text-decoration: none;
-}
-	a:focus, a:active {
-		text-decoration: none;
-	}
-	a:hover {
-	}
-
-
-/* custom classes
----------------------------- */
-/*
-    Classes that your likely to use all over your site, like rss links, or a button style or something
-    But not something thats going to be lots of lines of CSS - if it is, like 'calls to actions' in the right column,
-    make a module css, callsToActions.css and put it in the /modules/ folder (remember to link it in the cssLoader.css)
-*/
-
-a.btn-search {    
-}
-    a.btn-search:hover {    
-    }
-    
-a.btn-locate {    
-}
-    a.btn-locate:hover {    
-    }
-
-	
-/* element specific styles
----------------------------- */
-/* 
-    Styles for sitewide elements, like navigation, header, toolbars, footer.
-    Stuff that appears on most of the pages on a site.
-*/
-
-nav ul {
-}
-    nav ul li {
-    }
-        nav ul li a {   
-        }
-            nav ul li a:hover {
-            }
-
-footer {
-}
-	footer h1 {
-		font-weight: 100;
-		text-align: right;
-		color: @white;
-	}
-    footer p {
-    }
-    footer ul {
-    }
-        footer ul li {
-        }
-            footer ul li a {
-            }
-                footer ul li a:hover {
-                }
-
-div {
-    margin-top: 6px;
-}
-
-/* page specific styles
----------------------------- */
 #intro {
+	// height: 300px;
 	.column(12);
 }
 
-	#intro h1 {
-		font-family: @museo-slab, Georgia, serif;
-		text-align: center;
-	}
-
-	#intro h2 {
-		text-align: center;
-	}
-
-	#intro h4 {
-		text-align: center;
-	}
-
-
-
-#resources {
+#intro h1 {
+	// height: 120px;
+	// background-color: @sisal;
 	.column(12);
-	background-color: @opaque;
+	font-family: @museo-slab, Georgia, serif;
+	text-align: center;
 }
 
-	.feature {
-		background-color: @opaque;
-	}
+#intro h2 {
+	// background-color: @sisal;
+	text-align: center;
+}
+
+#intro h4 {
+	text-align: center;
+}
+
 
 #locations {
+	.column(6);
 	.push(3);
 	text-align: center;
 }
 
 #services {
 	.column(12);
+	background-color: green;
 }
 
-#services h2, #resources h2 {
+#services, #resources h2 {
 	background-color: @steelblue;
 	font-family: @museo-slab, Georgia, serif;
 	color: @white;
 	// padding: 20px;
-	// margin: 10px;
 }
 
 #services .grid {
 	.column(12);
 	background-color: @opaque;
-	// padding: 0 -5px 20px 20px;
-	margin-bottom: 20px;
+	padding: 0 -5px 20px 20px;
+	
+
 }
 
 #services .grid img {
-	background-color: @white;
-	// padding: 4px;			
-	// margin: 0 0 0 12px; 
+	background-color: white;
+	padding: 4px;				// (?) maybe border instead?
+	margin: 0 0 0 12px; 
+}
+
+#resources {
+	.column(12);
+	background-color: @opaque;
 }
 
 
@@ -338,12 +126,37 @@ div {
 	.column(12);
 	text-align: center;
 	color: lighten(@black,10%);
+
+
+	padding: 20px 0 20px 0;
+}
+
+blockquote {
+	.column(4);
+	background-color: @opaque;
 }
 
 #resources .feature {
 	.push(2);
+	// .column(9);
+	color: @white;
+}
+
+footer {
+	background-color: @steelblue;
+	clear: both;
+
+}
+
+footer h1 {
+	font-weight: 100;
+	text-align: right;
 	color: @white;
 }
 
 
- 
+.feature {
+	background-color: @opaque;
+}
+
+			
