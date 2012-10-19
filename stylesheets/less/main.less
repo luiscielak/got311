@@ -19,6 +19,13 @@
 
 /* colors
 ---------------------------- */
+@formica: #F7EFDD;
+@opaque: #C8C1AE;
+@sisal: #DECFB8;
+@steelblue: #345359;
+@azurite: #0D1324;
+@white: #F6F6F6;
+
 
 /* basic elements
 ---------------------------- */
@@ -43,41 +50,42 @@ html, body {
 	font-family: @maven-pro, Helvetica, sans-serif;
 }
 
-
-
 header {
 	.column(12);
 	height: 85px;
-	background-color: rgb(55,89,95);
+	background-color: @steelblue;
 }
 
 article {
-	background-color: brown;
+	background-color: @white;
 }
 
 #intro {
-	height: 300px;
+	// height: 300px;
 	.column(12);
 }
 
 #intro h1 {
-	height: 120px;
-	background-color: red;
+	// height: 120px;
+	// background-color: @sisal;
+	.column(12);
 	font-family: @museo-slab, Georgia, serif;
+	text-align: center;
 }
 
 #intro h2 {
-	background-color: pink;
+	// background-color: @sisal;
+	text-align: center;
 }
 
 #intro h4 {
-	background-color: purple;
+	text-align: center;
 }
 
 
 #locations {
-	.column(12);
-	background-color: yellow;
+	.column(6);
+	.push(3);
 	text-align: center;
 }
 
@@ -86,9 +94,16 @@ article {
 	background-color: green;
 }
 
+#services, #resources h2 {
+	background-color: @steelblue;
+	font-family: @museo-slab, Georgia, serif;
+	color: @white;
+	// padding: 20px;
+}
+
 #services .grid {
 	.column(12);
-	background-color: red;
+	background-color: @opaque;
 	padding: 0 -5px 20px 20px;
 	
 
@@ -102,7 +117,7 @@ article {
 
 #resources {
 	.column(12);
-	background-color: navy;
+	background-color: @opaque;
 }
 
 
@@ -115,7 +130,7 @@ article {
 
 blockquote {
 	.column(4);
-	background-color: white;
+	background-color: @opaque;
 }
 
 #resources .feature {
@@ -125,15 +140,20 @@ blockquote {
 }
 
 footer {
-	background-color: violet;
+	background-color: @steelblue;
+	clear: both;
 
 }
 
 footer h1 {
 	font-weight: 100;
 	text-align: right;
+	color: @white;
 }
 
 
+.feature {
+	background-color: @opaque;
+}
 
-
+			

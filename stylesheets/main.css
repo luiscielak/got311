@@ -40,35 +40,37 @@ header {
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   height: 85px;
-  background-color: #37595f;
+  background-color: #345359;
 }
 article {
-  background-color: brown;
+  background-color: #f6f6f6;
 }
 #intro {
-  height: 300px;
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
 }
 #intro h1 {
-  height: 120px;
-  background-color: red;
-  font-family: 'MuseoSlab500Regular', Georgia, serif;
-}
-#intro h2 {
-  background-color: pink;
-}
-#intro h4 {
-  background-color: purple;
-}
-#locations {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  background-color: yellow;
+  font-family: 'MuseoSlab500Regular', Georgia, serif;
+  text-align: center;
+}
+#intro h2 {
+  text-align: center;
+}
+#intro h4 {
+  text-align: center;
+}
+#locations {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 26.041666666666668%;
   text-align: center;
 }
 #services {
@@ -78,12 +80,18 @@ article {
   margin: 0 1.0416666666666665%;
   background-color: green;
 }
+#services,
+#resources h2 {
+  background-color: #345359;
+  font-family: 'MuseoSlab500Regular', Georgia, serif;
+  color: #f6f6f6;
+}
 #services .grid {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  background-color: red;
+  background-color: #c8c1ae;
   padding: 0 -5px 20px 20px;
 }
 #services .grid img {
@@ -96,7 +104,7 @@ article {
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  background-color: navy;
+  background-color: #c8c1ae;
 }
 #services blockquote {
   display: inline;
@@ -112,16 +120,21 @@ blockquote {
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
-  background-color: white;
+  background-color: #c8c1ae;
 }
 #resources .feature {
   margin-left: 17.708333333333332%;
   background-color: red;
 }
 footer {
-  background-color: violet;
+  background-color: #345359;
+  clear: both;
 }
 footer h1 {
   font-weight: 100;
   text-align: right;
+  color: #f6f6f6;
+}
+.feature {
+  background-color: #c8c1ae;
 }
