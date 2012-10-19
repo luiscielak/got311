@@ -25,6 +25,7 @@
 @steelblue: #345359;
 @azurite: #0D1324;
 @white: #F6F6F6;
+@black: #252525;
 
 
 /* basic elements
@@ -124,7 +125,9 @@ article {
 #services blockquote {
 	.column(12);
 	text-align: center;
-	color: gray;
+	color: lighten(@black,10%);
+
+
 	padding: 20px 0 20px 0;
 }
 
@@ -136,7 +139,7 @@ blockquote {
 #resources .feature {
 	.push(2);
 	// .column(9);
-	background-color: red;
+	color: @white;
 }
 
 footer {

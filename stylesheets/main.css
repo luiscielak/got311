@@ -112,7 +112,7 @@ article {
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   text-align: center;
-  color: gray;
+  color: #3f3f3f;
   padding: 20px 0 20px 0;
 }
 blockquote {
@@ -124,7 +124,7 @@ blockquote {
 }
 #resources .feature {
   margin-left: 17.708333333333332%;
-  background-color: red;
+  color: #f6f6f6;
 }
 footer {
   background-color: #345359;
