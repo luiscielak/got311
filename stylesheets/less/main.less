@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {
 	    line-height: 60px;
 	    margin-bottom: 50px;
 	    font-style: normal;
-	    font-weight: 700;
+	    font-weight: 600;
 	    font-family: @museo-slab;
 	    text-transform: uppercase;
 	    color: rgba(34, 34, 34, 0.9);
@@ -123,11 +123,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {
 	}
 
 	h3 {
-	    font-size: 37.083px;
-	    line-height: 37.083px;
+	    font-size: 25px;
+	    line-height: 25px;
 	    margin-bottom: 25px;
-	    font-style: normal;
-	    font-weight: 500;
+	    font-style: thin;
+	    font-weight: 200;
 	    font-family: @museo-sans;
 	    letter-spacing: 0px;
 	}
@@ -276,19 +276,32 @@ div {
 ---------------------------- */
 #intro {
 	.column(12);
+	padding-top: 60px;
+
 }
 
 	#intro h1 {
 		font-family: @museo-slab, Georgia, serif;
 		text-align: center;
+		color: @black;
 	}
 
-	#intro h2 {
-		text-align: center;
+	#intro h3 {
+		.column(8);
+		.push(2);
+		text-align: left;
+		color: lighten(@black,30%);
+		margin: 10px 0 40px 0;
+		padding: 10px 0 0 0;
+		line-height: 1.5em;
 	}
 
 	#intro h4 {
 		text-align: center;
+	}
+
+	#intro hr {
+		width: 100%;
 	}
 
 
