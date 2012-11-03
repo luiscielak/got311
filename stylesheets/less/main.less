@@ -27,6 +27,10 @@
 @white: #F6F6F6;
 @black: #252525;
 
+/* texture
+---------------------------- */
+@bg-texture: 'url(../img/groovepaper.png)';
+
 
 /* basic elements
 ---------------------------- */
@@ -34,6 +38,9 @@ html, body {
 	font-family: @museo-sans, Helvetica, sans-serif;
 	font: 16px/16px;	
 	background-color: @white;
+    background-image: url(../../img/groovepaper.png);
+    // background-position: top;
+    background-repeat: repeat;	
 }
 
 
@@ -52,10 +59,23 @@ html, body {
 }	
 
 	header {
-		.column(12);
+		// .column(12);
 		height: 85px;
+		width: 100%;
+		position: relative;
 		background-color: @steelblue;
+		background-image: url(../../img/header-gradient.jpg);  	
+	  	margin-left: 0;
+	  	top: 0;
+	  	right: 0;
+	  	left: 0;
+	  	z-index: 1000;
 	}
+		
+		#logo {
+			.column(12);
+			padding: 11px 0 0 179px;
+		}
 
 		header h1 {
 			color: @white;
@@ -72,7 +92,7 @@ html, body {
 	}
 
 		article {
-			background-color: @white;
+			// background-color: @white;
 		}
 
 		aside {
@@ -241,14 +261,19 @@ a.btn-locate {
     Stuff that appears on most of the pages on a site.
 */
 
-nav ul {
+
+nav {
 }
-    nav ul li {
-    }
-        nav ul li a {   
-        }
-            nav ul li a:hover {
-            }
+	nav h1 {
+	}
+	nav ul {
+	}
+	    nav ul li {
+	    }
+	        nav ul li a {   
+	        }
+	            nav ul li a:hover {
+	            }
 
 footer {
 }
@@ -276,24 +301,25 @@ div {
 ---------------------------- */
 #intro {
 	.column(12);
-	padding-top: 60px;
+	padding: 55px 0 35px 0;
 
 }
 
 	#intro h1 {
+		.column(8);
 		font-family: @museo-slab, Georgia, serif;
 		text-align: center;
 		color: @black;
+		padding: 0 0 50px 55px;
 	}
 
 	#intro h3 {
 		.column(8);
-		.push(2);
 		text-align: left;
-		color: lighten(@black,30%);
-		margin: 10px 0 40px 0;
-		padding: 10px 0 0 0;
-		line-height: 1.5em;
+		color: lighten(@black,40%);
+		line-height: 1.9em;
+		padding: 4px 0 54px 85px;
+		letter-spacing: 2px;
 	}
 
 	#intro h4 {
@@ -301,7 +327,8 @@ div {
 	}
 
 	#intro hr {
-		width: 100%;
+		width: 110%;
+		padding: 0 0 0 20px;
 	}
 
 
