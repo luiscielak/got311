@@ -71,6 +71,8 @@ html {
   /* 1 */
 
   -webkit-text-size-adjust: 100%;
+  /* 2 */
+
   -ms-text-size-adjust: 100%;
   /* 2 */
 
@@ -343,6 +345,8 @@ textarea {
   /* 2 */
 
   vertical-align: baseline;
+  /* 3 */
+
   *vertical-align: middle;
   /* 3 */
 
@@ -400,6 +404,8 @@ input[type="radio"] {
   /* 2 */
 
   *height: 13px;
+  /* 3 */
+
   *width: 13px;
   /* 3 */
 
@@ -463,6 +469,8 @@ table {
 ---------------------------- */
 /* colors
 ---------------------------- */
+/* texture
+---------------------------- */
 /* basic elements
 ---------------------------- */
 html,
@@ -470,6 +478,8 @@ body {
   font-family: 'museo_sans_500regular', Helvetica, sans-serif;
   font: 16px/16px;
   background-color: #f6f6f6;
+  background-image: url(../../img/groovepaper.png);
+  background-repeat: repeat;
 }
 /* layouts
 ---------------------------- */
@@ -489,7 +499,21 @@ header {
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   height: 85px;
+  position: relative;
   background-color: #345359;
+  background-image: url(../../img/header-gradient.jpg);
+  margin-left: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+#logo {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  padding: 11px 0 0 auto;
 }
 header h1 {
   color: #f6f6f6;
@@ -500,9 +524,6 @@ header h1 {
   font-size: 54px;
   text-transform: none;
   line-height: 73px;
-}
-article {
-  background-color: #f6f6f6;
 }
 footer {
   background-color: #345359;
@@ -532,7 +553,7 @@ h1 {
   line-height: 60px;
   margin-bottom: 50px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'MuseoSlab500Regular';
   text-transform: uppercase;
   color: rgba(34, 34, 34, 0.9);
@@ -551,11 +572,11 @@ h2 {
   letter-spacing: -1px;
 }
 h3 {
-  font-size: 37.083px;
-  line-height: 37.083px;
+  font-size: 25px;
+  line-height: 25px;
   margin-bottom: 25px;
-  font-style: normal;
-  font-weight: 500;
+  font-style: thin;
+  font-weight: 200;
   font-family: 'museo_sans_500regular';
   letter-spacing: 0px;
 }
@@ -659,16 +680,35 @@ div {
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
+  padding: 55px 0 35px 0;
 }
 #intro h1 {
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
   font-family: 'MuseoSlab500Regular', Georgia, serif;
   text-align: center;
+  color: #252525;
+  padding: 0 0 50px 55px;
 }
-#intro h2 {
-  text-align: center;
+#intro h3 {
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+  text-align: left;
+  color: #8b8b8b;
+  line-height: 1.9em;
+  padding: 4px 0 54px 85px;
+  letter-spacing: 2px;
 }
 #intro h4 {
   text-align: center;
+}
+#intro hr {
+  width: 110%;
+  padding: 0 0 0 20px;
 }
 #resources {
   display: inline;
@@ -681,7 +721,11 @@ div {
   background-color: #c8c1ae;
 }
 #locations {
-  margin-left: 26.041666666666668%;
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 17.708333333333332%;
   text-align: center;
 }
 #services {

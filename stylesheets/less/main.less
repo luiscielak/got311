@@ -1,6 +1,7 @@
 @import 'grid.less';
 @import 'normalize.less';
 @import 'fonts/fonts.css';
+// @import '../../bootstrap/less/bootstrap.less';
 
 /* fonts 
 ---------------------------- */
@@ -59,9 +60,9 @@ html, body {
 }	
 
 	header {
-		// .column(12);
+		.column(12);
 		height: 85px;
-		width: 100%;
+		// width: 100%;
 		position: relative;
 		background-color: @steelblue;
 		background-image: url(../../img/header-gradient.jpg);  	
@@ -74,7 +75,7 @@ html, body {
 		
 		#logo {
 			.column(12);
-			padding: 11px 0 0 179px;
+			padding: 11px 0 0 auto;
 		}
 
 		header h1 {
