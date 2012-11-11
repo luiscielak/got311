@@ -46,7 +46,7 @@ $(function() {
 
           // Write HTML div with location
           document.getElementById("location-wrap").innerHTML=                
-            "<h3>"+result.city+", "+result.state+"</h3>";
+            "<h1>Yes!</h1><h3>3-1-1 is available in</h3><h2>"+result.city+", "+result.state+"</h2>";
         },
         error: function(result, success) {
           $(".zip-error").slideDown(300);

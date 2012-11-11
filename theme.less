@@ -13,7 +13,7 @@
 // Core variables and mixins
 // @import "stylesheets/variables.less"; // Modify this for custom colors, font-sizes, etc
 // @import "mixins.less";
-
+// @import "main.less";
 
 /* Grid system and page structure 
 ------------------------------------------- */
@@ -74,13 +74,33 @@ body {
 }
 	#notice-confirm {
 		h1 {
-			// background: white;			
-			padding: 10px 0 10px 0;
-			// border: solid 1px;
+			font-family: Sreda;
+			font-size: 103px;
+			text-transform: uppercase;
+			color: #345359;
+			-webkit-box-shadow: 0 6px 3px rgba(200, 193, 174, 0.75);
+			-moz-box-shadow: 0 6px 3px rgba(200, 193, 174, 0.75);
+			box-shadow: 0 6px 3px rgba(200, 193, 174, 0.75);
+			height: 112px;
+			background: white;
+			line-height: 128px;
+			width: 318px;
+			margin-left: 140px;
+			font-weight: normal;
 		}
-		h6 {
-			// background-color: red;
-		}	
+
+		h2 {
+
+			font-family: "Museo Sans";
+			font-size: 63px;
+			color: #345359;
+			text-shadow: inset 1px 1px 1px #000;
+		}
+
+		h3 {
+
+		}
+
 	}
 
 #channel {
@@ -103,12 +123,80 @@ body {
 
 #services {
 	// border: solid 1px;	
-	// background: blue;
+	background: #c8c1ae;
 }
 
+
+	.page-header {
+		
+	}
+	.page-header h2{
+		font-family: "Museo Slab";
+		font-size: 31px;
+		line-height: 45px;
+		text-align: right;
+		color: #fff;		
+		background-color: #345359;
+		-webkit-box-shadow: 0 5px 2px rgba(222,207,184,.75);
+		-moz-box-shadow: 0 5px 2px rgba(222,207,184,.75);
+		box-shadow: 0 5px 2px rgba(222,207,184,.75);
+		width: 1088px;
+		height: 40px;		
+		margin-left: -810px;
+		padding: 0 30px 0 0;
+	}
 	.thumbnails {
 		// @media (min-width: 1200px)
 		margin-left: 0px;
+
+		li {
+
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				background-color: #eee;
+
+			h3 {
+					font-size: 22.083px;
+					line-height: 25.083px;
+					margin-bottom: 25px;
+					font-style: normal;
+					font-weight: 500;
+					font-family: Helvetica, sans-serif;
+					letter-spacing: -1.5px;
+				}
+
+			.caption
+			{
+				// width: 210px;
+				height: 63px;
+				background-color: #f8f8f8;
+
+
+			}
+
+			.thumbnail 				// container-inner
+			{
+				// width: 210px;
+				height: 211px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				background-color: #fff;
+			}
+
+			.container-bg
+			{
+				// width: 220px;
+				// height: 275px;
+				// -webkit-border-radius: 10px;
+				// -moz-border-radius: 10px;
+				// border-radius: 10px;
+				// background-color: #eee;
+			}
+
+							
+		}
 	}
 
 #resources {
