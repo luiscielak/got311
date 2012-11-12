@@ -1,3 +1,4 @@
+@import "fonts/fonts.css";
 /*!
  * Got311.org v0.1
  *
@@ -5143,7 +5144,6 @@ body {
   background-color: #f8f8f8;
 }
 .thumbnails li .thumbnail {
-  height: 211px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5152,22 +5152,46 @@ body {
 footer {
   background-color: #345359;
   color: #c8c1ae;
+  padding-top: 100px;
 }
 footer a {
-  border-bottom: 1px dotted #c8c1ae;
   color: #c8c1ae;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 footer a:hover {
-  border-bottom: 1px solid #c8c1ae;
   color: #b3a694;
+  text-decoration: none;
 }
 footer .footer-logo {
-  padding: 20px 0 20px 0;
-  margin-left: -100px;
+  padding: 40px 0 28px 0;
   text-align: center;
 }
 footer .footer-info {
   margin: 0 0 0 60px;
+}
+footer .footer-info a {
+  border-bottom: 1px dotted #c8c1ae;
+  color: #c8c1ae;
+}
+footer .footer-info a:hover {
+  border-bottom: 1px dotted #c8c1ae;
+  color: #b3a694;
+  text-decoration: none;
+}
+footer .footer-social {
+  text-align: center;
+}
+footer .footer-social a {
+  font-size: 30px;
+  margin: 0 36px 0 20px;
+}
+footer .brand {
+  padding: 0 100px 0 0;
+}
+footer .brand a,
+footer .brand a:hover {
+  border: none;
 }
 /* Base CSS
 ------------------------------------------- */
