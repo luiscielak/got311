@@ -269,7 +269,7 @@
  			<a href="http://twitter.com/got311org" target="_blank" class="ss-icon">twitter</a>
 			<a href="http://plus.google.com" target="_blank" class="ss-icon">googleplus</a>
 			<!-- <a href="#" target="_blank" class="ss-icon">email</a> -->
-			<a data-toggle="modal" href="#loginModal" target="_blank" class="ss-icon">email</a>			
+			<a data-toggle="modal" href="#contactModal" target="_blank" class="ss-icon">email</a>			
 		</div>
 
 		<!-- Footer Logo -->
@@ -288,8 +288,8 @@
 
 	<!-- Contact Form Modal 
 	================================================== -->
-	<!-- <a data-toggle="modal" class="btn" href="#loginModal">Log in</a> -->
-	<div class="modal hide" id="loginModal">
+	<!-- <a data-toggle="modal" class="btn" href="#contactModal">Log in</a> -->
+	<div class="modal hide" id="contactModal">
 	    <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">✕</button>
 	        <h3>Contact Got311</h3>
@@ -299,22 +299,24 @@
 	            <div class="span10 offset1">
 	                <div id="modalTab">
 	                    <div class="tab-content">
-	                        <div class="tab-pane active" id="login">
-	                            <form method="post" action='' name="login_form">
-	                                <p><input type="text" class="span12" name="eid" id="email" placeholder="Email"></p>
-	                                <p><input type="password" class="span12" name="passwd" placeholder="Password"></p>
-	                                <p><button type="submit" class="btn btn-primary">Sign in</button>
-	                                <a href="#forgotpassword" data-toggle="tab">Forgot Password?</a>
-	                                </p>
-	                            </form>
-	                        </div>
-	                        <div class="tab-pane fade" id="forgotpassword">
-	                            <form method="post" action='' name="forgot_password">
-	                                <p>Hey this stuff happens, send us your email and we'll reset it for you!</p>
-	                                <input type="text" class="span12" name="eid" id="email" placeholder="Email">
-	                                <p><button type="submit" class="btn btn-primary">Submit</button>
-	                                <a href="#login" data-toggle="tab">Wait, I remember it now!</a>
-	                                </p>
+
+							<div class="tab-pane active" id="contact">
+								<form method="post" action="email.php" name="contactform" >
+									
+									<p><input type="text" name="name" class="span8" placeholder="Name"></p>
+									<p><input type="text" name="email" class="span8" placeholder="Email Address"></p>
+									<p><textarea rows="5" name="message" class="span8" placeholder="Message"></textarea></p>
+
+									<div class="buttons span6 pull-right">
+										<p><button type="submit" class="btn btn-inverse">  <i class="icon-envelope icon-white icon"></i> &#8594; </button></p>
+										<!-- <a href="#form-thanks" data-toggle="tab">Thx msg</a> -->
+									</div>
+								</form>
+							</div>
+								
+	                        <div class="tab-pane fade" id="form-thanks">
+	                            <form method="post" action='' name="form-thanks">	                                
+	                                <h5>Thanks man!!1</h5>                                
 	                            </form>
 	                        </div>
 	                    </div>
