@@ -63,3 +63,7 @@ $(function() {
   });
 
 }); // END DOM Ready
+
+
+// ontype change -> hide div, remove html when anychanges
+
