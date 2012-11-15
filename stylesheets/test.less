@@ -15,7 +15,7 @@
 // @import "../bootstrap/less/responsive.less";
 
 // Fonts
-// @import "../fonts/fonts.css";
+@import "../fonts/fonts.css";
 
 // Core variables and custom mixins
 @import "variables.less";
@@ -34,7 +34,6 @@
 
 body {
     padding: 40px 0 0 0;
-
 }
 
 // Links
@@ -51,44 +50,245 @@ a:hover {
 // Grid
 // --------------------------------------------------
 
-#overview {
-    background-color: red;
-    height: 768px;
 
-    // .makeRow();
-    // .makeColumn(2);
+#overview {
+
+    .makeRow();
+    .makeColumn(12);
+
+    // border: solid 1px;
+
+    .container {
+
+        h1 {
+
+        }
+
+        p {
+
+            .lead {
+                
+            }
+        }
+
+
+    }
+
+
+
 }
 
 #location {
-    background-color: green;
-    height: 768px;
+    border: solid 1px;
+    .makeRow();
+    .makeColumn(12);
+
+    .container {
+    // border: solid 1px;
+    }
+
+        .page-header {
+            border: solid 1px;
+            display: none;
+            h2 {
+
+            }
+
+        }
+
+        #location-form {
+            .makeColumn(10);
+               border: solid 1px;
+               text-align: center;
+
+            h4 {
+                .makeColumn(9);
+                background-color: red;
+                border: solid 1px;
+            }
+
+            i {
+                border: solid 1px;
+
+            }
+
+        }
+
+            #location-form-finder {
+                border: solid 1px;
+                background-color: purple;
+
+                .makeColumn(4,1);
+                text-align: center;
+
+                h5 {
+                    border: solid 1px;
+                }
+
+                h6 {
+                    border: solid 1px;
+                }
+
+                .input-append {
+                    border: solid 1px;
+
+                }
+
+            }
+
+            #location-form-zip {
+                border: solid 1px;
+                .makeColumn(4);
+                background-color: grey;
+
+                h5 {
+                    border: solid 1px;
+                }
+
+                .input-append {
+                    border: solid 1px;
+                }
+
+            }
 }
 
 #notice {
+    .makeRow();
+    .makeColumn(12);
+
     background-color: orange;
-    height: 768px;
+    // height: 768px;
+
+    .container {
+        text-align: center;
+
+    }
+        .page-header{
+            display: none;
+
+            h2 {
+
+            }
+        }
+
+        #notice-confirm {
+            .makeColumn(8,1);
+        }
+
+        #location-wrap {
+
+            h1 {
+
+            }
+
+            h2 {
+
+            }
+
+            h3 {
+
+            }
+        }
+
+
 
 }
 
 #channels {
+    .makeRow();
+    .makeColumn(12);
+
     background-color: yellow;
-    height: 768px;
+    // height: 768px;
+
+    .container {
+
+    }
+
+        .page-header {
+            display: none;
+
+            h2 {
+
+            }
+        }
+
+        ul {
+
+            text-align: center;
+            outline-style: none;
+            display: inline;
+        }
+
+        li {
+            .makeColumn(2,1);
+            border: solid 1px;
+        }
+
+
 
 }
 
 #services {
+    .makeRow();
+    .makeColumn(12);
+
     background-color: purple;
     height: 768px;
 
 }
 
 #resources {
+    .makeRow();
+    .makeColumn(12);
+
     background-color: orange;
     height: 768px;
 
 }
 
 footer {
+    .makeRow();
+    .makeColumn(12);
+
+    .footer {
+
+    }
+    .container {
+
+    }
+        .footer-social {
+            a {
+
+            }
+            i {
+
+            }
+        }
+
+        .footer-logo {
+            img {
+
+            }
+        }
+
+        .footer-info {
+            h2 {
+
+            }
+
+            p {
+
+            }
+
+            a {
+                
+            }
+
+
+        }
+
+
     background-color: pink;
     height: 768px;
 
