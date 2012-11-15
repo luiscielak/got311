@@ -25,8 +25,8 @@
   <!-- Favicons
   ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico">
-    <!-- <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"> -->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
 
   <!-- Google Analytics -->
@@ -48,39 +48,47 @@
 
 <body>
 
+
+
   <!-- Header
   ================================================== -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="../dev.html"><img src="img/logo.png" alt="Got311"></a>        
-        <!-- <a class="brand" href="../dev.html">Got311</a> -->
+  <header>
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="../dev.html"><img src="img/logo.png" alt="Got311"></a>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- Subhead Overview
-  ================================================== -->
-  <header id="overview" class="jumbotron subhead container">
-    <h1>Three-One-One</h1>
-    <p class="lead">The non-emergency telephone number that provides municipal services in your area.</p>
   </header>
 
-  <!-- Page Wraper -->
+
+
+  <!-- Page Wraper
+  ================================================== -->  
   <div id="page" class="container">
 
 
-    <!-- Locations
+    <!-- Overview
+    ================================================== -->  
+    <div id="overview">
+      <h1>Three-One-One</h1>
+      <p class="lead">The non-emergency telephone number that provides municipal services in your area.</p>
+    </div>
+
+
+    <!-- Location
     ================================================== -->
-    <section id="locations" class="row container span10 offset1">
-      <div class="">
-        <h4>Find out if 3-1-1 is available in your area.</h4>
-      </div>
+    <section id="location" class="row container span10">
+
 
       <!-- Locations: Form -->
-      <div class="container row">
-        
-        <!-- Locations Form: Finder -->
+      <div id="location-form">
+        <div>
+          <h4>Find out if 3-1-1 is available in your area.</h4>
+        </div>        
+        <!-- Locations form: Finder -->
         <div id="location-finder" class="span4">
           <h5>Find your location automagically.</h5>
           <div class="input-append">
@@ -88,12 +96,12 @@
           </div>
         </div>
 
-        <!-- Locations: 'OR' -->
+        <!-- Locations form: 'OR' -->
         <div id="or" class="span1">
           <h6>- OR - </h6>
         </div>    
 
-        <!-- Location Finder Form -->
+        <!-- Locations form: Zip -->
         <div id="location-zip" class="span4">
           <h5>Enter your city  or zip code.</h5>        
           <form action="#" method="post" class="fancy-form">
@@ -108,13 +116,16 @@
           </form> 
         </div>
       </div>
+
     </section>
+
+
 
     <!-- Service Availability Notice
     ================================================== -->
-    <section id="notice" class="row container span12">
+    <section id="notice" class="row container span10">
       
-      <div id="notice-confirm" class="row span8">
+      <div id="notice-confirm" class="row span8 offset1">
       <!-- 
         *** Sample output => #location-wrap
         > Yes!
@@ -127,172 +138,193 @@
 
       </div>
       
-      <!-- Channels Available
-      ================================================== -->
-      <div id="channel" class="row span8">
-
-        <!-- Phone Service -->
-        <div id="phone" class="span2">
-          <img src="http://placehold.it/100x100" class="img-circle">
-          <div class="caption">
-                  <p>phone service</p>
-              </div>
-          </div>
-        
-        <!-- Web -->
-        <div id="web" class="span2">
-          <img src="http://placehold.it/100x100" class="img-circle">
-          <div class="caption">
-                  <p>web app</p>
-              </div>
-          </div>
-        
-        <!-- Mobile App -->
-        <div id="app" class="span2">
-          <img src="http://placehold.it/100x100" class="img-circle">
-          <div class="caption">
-                  <p>mobile app</p>
-              </div>
-          </div>
-
     </section>  <!-- / #notice -->
 
-      <!-- Services Thumbnails
-      ================================================== -->
-      <section id="services" class="row container span11">
-        <div class="page-header">
-      <h2>Services</h2>
-      <p class="offset1">Dialing <strong>3-1-1</strong> allows city residents to obtain important services through a central, all-purpose phone number <strong>quickly</strong> and <strong>effectively</strong>. </p>
-        </div>
 
-        <div class="row offset1">
-          <ul class="thumbnails">
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/graffiti-removal.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Graffiti Removal</h3>
-                </div>
-              </div>
-            </li>
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/dead-animal.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Dead Animal</h3>
-                </div>
-              </div>
-            </li>
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/littering.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Littering</h3>
-                </div>
-              </div>
-            </li>
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/noise-complaint.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Noise Complaint</h3>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="row offset1">
-          <ul class="thumbnails">
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/recycle.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Recycle</h3>
-                </div>
-              </div>
-            </li>
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/towed-vehicle.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Towed Vehicle</h3>
-                </div>
-              </div>
-            </li>
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/vacant-building.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Vacant Building</h3>
-                </div>
-              </div>
-            </li>
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/250x250" alt="">
-                <!-- <img src="img/street-light-outage.gif" alt=""> -->
-                <div class="caption">
-                  <h3>Street Light Outage</h3>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-    </section>
-
-    <!--  External Resources
+    <!-- Channels Available
     ================================================== -->
-    <section id="resources" class="row container span11">
-      
-      <!-- Page Header -->
-      <div class="page-header">
-        <h2>External Resources</h2>
-      </div>
-      
-      <div class="feature">     
-        <img src="http://placehold.it/500x350">
-        <caption>caption 1</caption>
+    <section id="channels" class="row container span12">
+
+      <div>
+        <ul>
+          <!-- Phone Service -->
+          <li id="phone" class="span3">
+            <a href="#">
+              <i class="ss-icon">call</i>
+              <p class="caption">phone service</p>
+            </a>
+          </li>
+
+          <!-- Website Service -->
+          <li id="phone" class="span3">
+            <a href="#">
+              <i class="ss-icon">computer</i>
+              <p class="caption">website</p>
+            </a>
+          </li>
+
+          <!-- Mobile App Service -->
+          <li id="app" class="span3">
+            <a href="#">
+              <i class="ss-icon">mobile</i>
+              <p class="caption">mobile app</p>
+            </a>
+          </li>          
+        </ul>
       </div>
 
-    </section>
+    </section>  
+
+
+
+    <!-- Services
+    ================================================== -->
+    <section id="services" class="row container span12">
+      <div class="page-header">
+        <h2>Services</h2>
+        <p class="offset1">Dialing <strong>3-1-1</strong> allows city residents to obtain important services through a central, all-purpose phone number <strong>quickly</strong> and <strong>effectively</strong>. </p>
+      </div>
+
+      <!-- Services: Thumbnails -->
+      <div class="row offset1">
+        <ul class="thumbnails">
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/graffiti-removal.gif" alt=""> -->
+              <div class="caption">
+                <h3>Graffiti Removal</h3>
+              </div>
+            </div>
+          </li>
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/dead-animal.gif" alt=""> -->
+              <div class="caption">
+                <h3>Dead Animal</h3>
+              </div>
+            </div>
+          </li>
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/littering.gif" alt=""> -->
+              <div class="caption">
+                <h3>Littering</h3>
+              </div>
+            </div>
+          </li>
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/noise-complaint.gif" alt=""> -->
+              <div class="caption">
+                <h3>Noise Complaint</h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row offset1">
+        <ul class="thumbnails">
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/recycle.gif" alt=""> -->
+              <div class="caption">
+                <h3>Recycle</h3>
+              </div>
+            </div>
+          </li>
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/towed-vehicle.gif" alt=""> -->
+              <div class="caption">
+                <h3>Towed Vehicle</h3>
+              </div>
+            </div>
+          </li>
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/vacant-building.gif" alt=""> -->
+              <div class="caption">
+                <h3>Vacant Building</h3>
+              </div>
+            </div>
+          </li>
+          <li class="span2">
+            <div class="thumbnail">
+              <img src="http://placehold.it/250x250" alt="">
+              <!-- <img src="img/street-light-outage.gif" alt=""> -->
+              <div class="caption">
+                <h3>Street Light Outage</h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+  </section>
+
+  <!--  External Resources
+  ================================================== -->
+  <section id="resources" class="row container span12">
+    
+    <!-- Page Header -->
+    <div class="page-header">
+      <h2>External Resources</h2>
+    </div>
+    
+    <div class="feature">     
+      <img src="http://placehold.it/500x350">
+      <caption>caption 1</caption>
+    </div>
+
+  </section>
+
+
+
 
   </div>  <!-- /#page -->
+
 
 
 
   <!-- Footer
   ================================================== -->
   <footer id="footer" class="row">
+    
+    <!-- Footer Wrap -->
+    <div id="footer-wrap">
 
-    <!-- Social Media -->
-    <div class="footer-social">
-      <a href="http://facebook.com" target="_blank" class="ss-icon">facebook</a>
-      <a href="http://twitter.com/got311org" target="_blank" class="ss-icon">twitter</a>
-      <a href="http://plus.google.com" target="_blank" class="ss-icon">googleplus</a>
-      <!-- <a href="#" target="_blank" class="ss-icon">email</a> -->
-      <a data-toggle="modal" href="#contactModal" target="_blank" class="ss-icon">email</a>     
+      <!-- Social Media -->
+      <div class="footer-social">
+        <a href="http://facebook.com" target="_blank" class="ss-icon ss-social">facebook</a>
+        <a href="http://twitter.com/got311org" target="_blank" class="ss-icon ss-social">twitter</a>
+        <a href="http://plus.google.com" target="_blank" class="ss-icon ss-social">googleplus</a>
+        <a data-toggle="modal" href="#contactModal" target="_blank" class="ss-icon ss-social">email</a>     
+      </div>
+
+      <!-- Footer Logo -->
+      <div class="footer-logo">
+        <img src="../img/logo-footer.png" />
+      </div>
+
+      <!-- Footer Info -->
+      <div class="footer-info">
+        <h2 class="footer-brand pull-right"><a href="#">Got311</a></h2>
+        <p>code + pixels by <br> <a href="http://twitter.com/luiscielak" target="_blank">@luisCielak</a></p>
+      </div>
+
     </div>
 
-    <!-- Footer Logo -->
-    <div class="footer-logo">
-      <img src="../img/logo-footer.png" />
-    </div>
-
-    <!-- Footer Info -->
-    <div class="footer-info">
-      <h2 class="brand pull-right"><a href="#">Got311</a></h2>
-      <p>code + pixels by <br> <a href="http://twitter.com/luiscielak" target="_blank">@luisCielak</a></p>
-    </div>
 
   </footer>
+
 
 
   <!-- Contact Form Modal 
@@ -334,6 +366,8 @@
           </div>
       </div>
   </div>
+
+
 
 
   <!-- Scripts

@@ -4888,9 +4888,7 @@ a.badge:hover {
 /* Grid system and page structure 
 ------------------------------------------- */
 body {
-  background-color: #f6f6f6;
-  background-image: url(../img/groovepaper.png);
-  background-repeat: repeat;
+  background: #c8c1ae;
   margin-top: 60px;
   /* 60px to make the container go all the way to the bottom of the topbar */
 
@@ -4898,7 +4896,7 @@ body {
 #overview p {
   text-align: left;
 }
-#locations {
+#location {
   text-align: center;
   padding: 20px 10px 20px 10px;
   margin-left: 0px;
@@ -4916,6 +4914,7 @@ body {
   background: lightgray;
 }
 #notice {
+  margin: 0 0 20px 0;
   text-align: center;
 }
 #notice-confirm h1 {
@@ -4939,8 +4938,36 @@ body {
   color: #345359;
   text-shadow: inset 1px 1px 1px #000;
 }
-#services {
-  background: #c8c1ae;
+#channels {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+#channels a,
+#channels a:hover {
+  text-decoration: none;
+}
+#channels ul {
+  display: inline;
+  border: solid 1px;
+  list-style-type: none;
+}
+#channels a {
+  color: #fff;
+  opacity: 0.8;
+}
+#channels i {
+  font-size: 40px;
+  opacity: 0.6;
+}
+#channels i:hover {
+  opacity: 1;
+}
+#channels p {
+  opacity: 0.6;
+}
+#services #services-wrap {
+  border: solid 1px;
+  background-color: red;
 }
 #resources {
   background: #c8c1ae;
@@ -5003,9 +5030,14 @@ body {
   background-color: #fff;
 }
 footer {
-  background-color: #345359;
+  background: #c8c1ae url(../img/footer-hafltone.png) repeat-x;
   color: #c8c1ae;
-  padding-top: 100px;
+  padding-top: 300px;
+}
+footer #footer-wrap {
+  background-color: #345359;
+  margin: -76px 0 0px 0;
+  padding: 40px 0 10px 0;
 }
 footer a {
   color: #c8c1ae;
@@ -5039,11 +5071,11 @@ footer .footer-social a {
   font-size: 30px;
   margin: 0 36px 0 20px;
 }
-footer .brand {
-  padding: 0 100px 0 0;
+footer .footer-brand {
+  padding: 0 50px 0 0;
 }
-footer .brand a,
-footer .brand a:hover {
+footer .footer-brand a,
+footer .footer-brand a:hover {
   border: none;
 }
 /* Base CSS
@@ -5065,5 +5097,17 @@ form .zip-wrap {
 ------------------------------------------- */
 /* Components: Misc
 ------------------------------------------- */
+.brand {
+  height: 10px;
+}
+.brand img {
+  opacity: 0.7;
+  width: 90px;
+  margin: -5px 0 0 0;
+  padding: 0 0 0 10px;
+}
+.brand img:hover {
+  opacity: 1;
+}
 /* Utility classes
 ------------------------------------------- */
