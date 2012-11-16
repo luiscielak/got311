@@ -7102,7 +7102,7 @@ body {
   margin: 40px 0 0 0;
 }
 header {
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.4);
 }
 footer {
   background: #c8c1ae url(../img/footer-hafltone.png) repeat-x;
@@ -7118,9 +7118,9 @@ footer a:hover {
   text-decoration: none;
 }
 footer .container {
-  background-color: #345359;
+  background-color: #28545a;
   margin: -76px 0 0px 0;
-  padding: 40px 0 10px 0;
+  padding: 40px 0 0px 0;
 }
 footer .footer-logo {
   padding: 40px 0 28px 0;
@@ -7150,8 +7150,61 @@ footer .footer-brand a,
 footer .footer-brand a:hover {
   border: none;
 }
+a {
+  text-decoration: none;
+}
 a:hover {
-  text-decoration: dashed;
+  text-decoration: none;
+}
+body {
+  margin-left: -20px;
+  *zoom: 1;
+  *zoom: 1;
+  margin-left: -20px;
+  *zoom: 1;
+  *zoom: 1;
+  float: left;
+  margin-left: 180px;
+  width: 380px;
+  float: left;
+  margin-left: 180px;
+  width: 380px;
+}
+body:before,
+body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body:after {
+  clear: both;
+}
+body:before,
+body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body:after {
+  clear: both;
+}
+body:before,
+body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body:after {
+  clear: both;
+}
+body:before,
+body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body:after {
+  clear: both;
 }
 #overview {
   margin-left: -20px;
@@ -7253,9 +7306,6 @@ a:hover {
 #location:after {
   clear: both;
 }
-#location .page-header {
-  display: none;
-}
 #location #location-form {
   float: left;
   margin-left: 20px;
@@ -7263,7 +7313,6 @@ a:hover {
   float: left;
   margin-left: 20px;
   width: 780px;
-  text-align: center;
 }
 #location #location-form h4 {
   float: left;
@@ -7280,7 +7329,6 @@ a:hover {
   float: left;
   margin-left: 100px;
   width: 300px;
-  text-align: center;
 }
 #location #location-form-zip {
   float: left;
@@ -7340,20 +7388,6 @@ a:hover {
 #notice:after {
   clear: both;
 }
-#notice .container {
-  text-align: center;
-}
-#notice .page-header {
-  display: none;
-}
-#notice #notice-confirm {
-  float: left;
-  margin-left: 100px;
-  width: 620px;
-  float: left;
-  margin-left: 100px;
-  width: 620px;
-}
 #channels {
   margin-left: -20px;
   *zoom: 1;
@@ -7403,14 +7437,6 @@ a:hover {
 }
 #channels:after {
   clear: both;
-}
-#channels .page-header {
-  display: none;
-}
-#channels ul {
-  text-align: center;
-  outline-style: none;
-  display: inline;
 }
 #channels li {
   float: left;
@@ -7695,18 +7721,39 @@ a:active {
   height: 10px;
 }
 .brand img {
-  opacity: 0.7;
-  width: 90px;
+  width: 100px;
+  opacity: 0.8;
   margin: -5px 0 0 0;
   padding: 0 0 0 10px;
 }
 .brand img:hover {
   opacity: 1;
 }
+.page-header {
+  border: none;
+}
 .page-header h2 {
-  background-color: #345359;
-  font-family: 'MuseoSlab500Regular', Georgia, serif;
+  font-family: 'MuseoSlab500Regular';
+  font-size: 26px;
+  line-height: 45px;
+  text-align: right;
   color: #f6f6f6;
+  background-color: #28545a;
+  -webkit-box-shadow: 0 5px 2px rgba(222, 207, 184, 0.75);
+  -moz-box-shadow: 0 5px 2px rgba(222, 207, 184, 0.75);
+  box-shadow: 0 5px 2px rgba(222, 207, 184, 0.75);
+  width: 1200px;
+  height: 40px;
+  margin-left: -810px;
+  padding: 0 30px 0 0;
+  font-weight: bold;
+}
+.page-header p {
+  font-family: 'museo_sans_500regular';
+  font-size: 20px;
+  color: #4b4b4b;
+  line-height: 37px;
+  padding: 6px 0 0 34px;
 }
 #overview {
   padding: 55px 0 35px 0;
@@ -7733,20 +7780,138 @@ a:active {
   width: 110%;
   padding: 0 0 0 20px;
 }
-#resources {
-  background-color: #c8c1ae;
-}
-#resources .feature {
-  background-color: #c8c1ae;
-}
-#locations {
+#location {
   text-align: center;
+  padding: 20px 0 20px 0;
+}
+#location .page-header {
+  display: none;
+}
+#location #location-form {
+  padding: 0 0 10px 0;
+}
+#location #location-form h4 {
+  text-align: center;
+  padding: 5px 0 10px 0;
+  margin: 30px 0 20px 60px;
+  line-height: 86px;
+}
+#location #location-form i {
+  color: #28545a;
+  font-size: 2.3em;
+}
+#location #location-form-finder {
+  text-align: center;
+}
+#notice {
+  margin: 0 0 20px 0;
+  text-align: center;
+  text-align: center;
+}
+#notice .page-header {
+  display: none;
+}
+#notice #notice-confirm h1 {
+  font-family: Sreda;
+  font-size: 103px;
+  text-transform: uppercase;
+  color: #28545a;
+  -webkit-box-shadow: 0 6px 3px rgba(200, 193, 174, 0.75);
+  -moz-box-shadow: 0 6px 3px rgba(200, 193, 174, 0.75);
+  box-shadow: 0 6px 3px rgba(247, 239, 221, 0.5);
+  height: 112px;
+  background: white;
+  line-height: 128px;
+  width: 318px;
+  font-weight: normal;
+  margin: 20px 0 40px 300px;
+}
+#notice #notice-confirm h2 {
+  font-family: 'MuseoSlab500Regular';
+  font-size: 63px;
+  color: #28545a;
+  text-shadow: inset 1px 1px 1px #000;
+  font-weight: bold;
+}
+#notice #notice-confirm h3 {
+  font-family: 'museo_sans_500regular';
+  color: #28545a;
+  margin: 0 0 30px;
+}
+#channels {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+#channels a,
+#channels a:hover {
+  text-decoration: none;
+}
+#channels a {
+  color: #f6f6f6;
+  opacity: 0.8;
+}
+#channels p {
+  opacity: 0.6;
+  text-align: center;
+}
+#channels ul {
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+  outline-style: none;
+}
+#channels i {
+  font-size: 40px;
+  opacity: 0.6;
+}
+#channels i:hover {
+  opacity: 1;
+}
+#channels .page-header {
+  display: none;
 }
 #services blockquote {
   text-align: center;
   color: #3f3f3f;
 }
 #services .thumbnails {
+  margin-left: 0px;
+}
+#services .thumbnails li {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+#services .thumbnails h3 {
+  font-size: 22.083px;
+  line-height: 25.083px;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: -1.5px;
+}
+#services .caption {
+  height: 63px;
+  background-color: #f8f8f8;
+}
+#services .thumbnail {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#resources {
   background-color: #c8c1ae;
-  margin-bottom: 20px;
+}
+#resources .feature {
+  background-color: #c8c1ae;
+}
+footer h2 {
+  margin: 0 0 0 0;
+  font-size: 2em;
+}
+footer p {
+  font-size: 1em;
 }

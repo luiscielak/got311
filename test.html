@@ -46,14 +46,12 @@
 
 <body>
 
-
-
     <!-- Navbar
     ================================================== -->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <!-- <a class="brand" href="../dev.html"><img src="img/logo.png" alt="Got311"></a> -->
+                <a class="brand" href="#"><img src="img/logo.png" alt="Got311"></a>
             </div>
         </div>
     </div>
@@ -61,7 +59,7 @@
 
     <!-- Overview Subhead
     ================================================== -->
-    <header id="overview">
+    <header id="overview" class="jumbotron">
         <div class="container">
             <h1>Three-One-One</h1>
             <p class="lead">
@@ -85,8 +83,9 @@
             <div id="location-form">
                 
                 <h4>
-                    Find out if 3-1-1 is available in your area.
-                    <br><i class="ss-icon">down</i>
+                    Find out if 3-1-1 <br> 
+                    is available in your area.<br>
+                    <a href="#location-form"> <i class="ss-icon">down</i> </a>
                 </h4>
                 
 
@@ -143,10 +142,12 @@
                         > 3-1-1 is available in
                         > Philadelhia, PA
                     -->
-                        <h1>Yes!</h1>
+
+<!--                         <a href="#location-result"><h1>Yes!</h1></a>
                         <h3>3-1-1 is available in</h3>
-                        <h2>"result.city", "result.state"</h2>
-                </div>
+                        <h2 id="location-result">"result.city", "result.state"</h2>
+
+ -->                </div>
 
             </div>
 
@@ -209,12 +210,13 @@
 
             <!-- Services: Thumbnails -->
             <div class="services-thumbnails">
+
+                <!-- Service Thumbnails: Row 1/2 -->
                 <ul class="thumbnails">
-                    
                     <li class="span2">
                         <div class="thumbnail">
                             <img src="http://placehold.it/250x250" alt="">
-                            <!-- <img src="img/graffiti-removal.gif" alt=""> -->
+                            <!-- <img src="img/idaffiti-removal.gif" alt=""> -->
                             <div class="caption">
                                 <h3>Graffiti Removal</h3>
                             </div>
@@ -249,8 +251,48 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            
+                <!-- Service Thumbnails: Row 2/2 -->
+                <ul class="thumbnails">
+                    <li class="span2">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/250x250" alt="">
+                            <!-- <img src="img/recycle.gif" alt=""> -->
+                            <div class="caption">
+                                <h3>Recycle</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span2">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/250x250" alt="">
+                            <!-- <img src="img/towed-vehicle.gif" alt=""> -->
+                            <div class="caption">
+                                <h3>Towed Vehicle</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span2">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/250x250" alt="">
+                            <!-- <img src="img/vacant-building.gif" alt=""> -->
+                            <div class="caption">
+                                <h3>Vacant Building</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span2">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/250x250" alt="">
+                            <!-- <img src="img/street-light-outage.gif" alt=""> -->
+                            <div class="caption">
+                             <h3>Street Light Outage</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
 
+            </div>
         </div>
     </section>
 
@@ -303,6 +345,46 @@
         
     </footer>
 
+
+      <!-- Contact Form Modal 
+      ================================================== -->
+      <!-- <a data-toggle="modal" class="btn" href="#contactModal">Log in</a> -->
+      <div class="modal hide" id="contactModal">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">✕</button>
+              <h3>Contact Got311</h3>
+          </div>
+              <div class="modal-body" style="text-align:center;">
+              <div class="row-fluid">
+                  <div class="span10 offset1">
+                      <div id="modalTab">
+                          <div class="tab-content">
+
+                  <div class="tab-pane active" id="contact">
+                    <form method="post" action="email.php" name="contactform" >
+                      
+                      <p><input type="text" name="name" class="span8" placeholder="Name"></p>
+                      <p><input type="text" name="email" class="span8" placeholder="Email Address"></p>
+                      <p><textarea rows="5" name="message" class="span8" placeholder="Message"></textarea></p>
+
+                      <div class="buttons span6 pull-right">
+                        <p><button type="submit" class="btn btn-inverse">  <i class="icon-envelope icon-white icon"></i> &#8594; </button></p>
+                        <!-- <a href="#form-thanks" data-toggle="tab">Thx msg</a> -->
+                      </div>
+                    </form>
+                  </div>
+                    
+                              <div class="tab-pane fade" id="form-thanks">
+                                  <form method="post" action='' name="form-thanks">                                 
+                                      <h5>Thanks man!!1 :)</h5>                                
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
 
 
