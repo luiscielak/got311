@@ -7453,6 +7453,45 @@ a:hover {
 #services:after {
   clear: both;
 }
+#services .container {
+  border: solid 1px;
+}
+#services .page-header {
+  border: solid 1px;
+}
+#services .page-header h2 {
+  border: solid 1px;
+}
+#services .page-header p {
+  border: solid 1px;
+}
+#services .page-header strong {
+  border: solid 1px;
+}
+#services .services-thumbnails {
+  border: solid 1px;
+}
+#services ul {
+  border: solid 1px;
+}
+#services .thumbnails {
+  border: solid 1px;
+}
+#services li {
+  border: solid 1px;
+}
+#services .thumbnail {
+  border: solid 1px;
+}
+#services img {
+  border: solid 1px;
+}
+#services .caption {
+  border: solid 1px;
+}
+#services h3 {
+  border: solid 1px;
+}
 #resources {
   margin-left: -20px;
   *zoom: 1;
