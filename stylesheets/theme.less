@@ -23,6 +23,7 @@
 
 
 
+
 // Scaffolding
 // --------------------------------------------------
 
@@ -111,7 +112,8 @@ a:hover {
 
 body {
     .makeRow();
-    .makeColumn(5,2);
+    .makeColumn(12);
+    // .makeColumn(5,2);
 }
 
 #overview {
@@ -202,49 +204,47 @@ footer {
 
 body {
     font-family: @museo-sans, Helvetica, sans-serif;
-    font: 16px/16px;
+    @baseFontSize;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {
-    font-size: 18px;
-    line-height: 18px;
+    @baseFontSize;
+    @baseLineHeight;
     margin: 0;
     font-weight: normal;
 }
 
 
     h1 {
-        font-size: 60px;
-        line-height: 60px;
-        margin-bottom: 50px;
-        font-style: normal;
-        font-weight: 600;
-        font-family: @museo-slab;
+        font-size:      3.333em;    // 60px;
+        line-height:    1em;        // 60px;
+        margin-bottom:  0.5em; 
+        font-style:     normal;
+        font-weight:    600;
+        font-family:    @museo-slab;
         text-transform: uppercase;
-        color: rgba(34, 34, 34, 0.9);
-        letter-spacing: -1px;
-        text-indent: 0px;
+        letter-spacing: 0.00555em;
     }
 
     h2 {
-        font-size: 47.123px;
-        line-height: 47.123px;
-        margin-bottom: 25px;
-        font-style: normal;
-        font-weight: 500;
-        font-family: @museo-slab;
+        font-size:      2.61794444444em; // 47.123px;
+        line-height:    1em;             // 47.123px;
+        margin-bottom:  0;
+        font-style:     normal;
+        font-weight:    500;
+        font-family:    @museo-slab;
         text-transform: capitalize;
-        margin-top: 0px;
-        letter-spacing: -1px;
+        margin-top:     0;
+        letter-spacing: 0.00555em;
     }
 
     h3 {
-        font-size: 25px;
-        line-height: 25px;
-        margin-bottom: 25px;
-        font-style: thin;
-        font-weight: 200;
-        font-family: @museo-sans;
+        font-size:      1.38888888889em;    // 25px;
+        line-height:    1em;
+        margin-bottom:  1em;
+        font-style:     thin;
+        font-weight:    200;
+        font-family:    @museo-sans;
         letter-spacing: 0px;
     }
 
@@ -292,14 +292,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {
     }
 
 p {
-    margin-bottom: 25px;
-    font-style: normal;
-    font-weight: 300;
-    font-family: @museo-sans;
-    font-size: 18px;
-    line-height: 22.919px;
-    text-align: left;
-    margin-top: 5px;
+    margin-bottom:  1.3888em;
+    text-align:     left;
+    margin-top:     1.27777778em;       // 5px;
 }
 
 blockquote {
@@ -455,7 +450,8 @@ nav {
         text-align: center;
         color: @black;
         text-align: left;
-        padding: 0 0 50px 55px;        
+        padding: 0 0 50px 55px;    
+        text-indent:    0.5em;    
     }
     
     h3 {
@@ -468,6 +464,22 @@ nav {
 
     h4 {
         text-align: center;
+    }
+
+
+    p {
+        margin-bottom: 2em;
+        font-style: normal;
+        font-weight: 300;
+        font-family: 'museo_sans_500regular';
+        font-size: 1.273em;
+        line-height: 2.5em;
+        text-align: left;
+        margin-top: 0;
+        margin-left: 5.5em;
+        text-indent: 0em;
+        word-spacing: 0.3em;
+        letter-spacing: 0.005em;
     }
 
     hr {
@@ -500,6 +512,7 @@ nav {
             color: @steelblue;
             font-size: 2.3em;            
         }
+
     }
 
             #location-form-finder {
@@ -679,6 +692,13 @@ footer {
         font-size: 1em;
     }
 }
+
+::selection {
+    background: fade(@steelblue,50%);
+    color: @formica;
+}
+
+
 
 // 
 // Utility classes
