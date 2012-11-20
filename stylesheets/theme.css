@@ -7098,9 +7098,6 @@ a.badge:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
-  margin: 40px 0 0 0;
-}
 header {
   background-color: rgba(246, 246, 246, 0.4);
 }
@@ -7157,54 +7154,7 @@ a:hover {
   text-decoration: none;
 }
 body {
-  margin-left: -20px;
-  *zoom: 1;
-  *zoom: 1;
-  margin-left: -20px;
-  *zoom: 1;
-  *zoom: 1;
-  float: left;
-  margin-left: 20px;
-  width: 940px;
-  float: left;
-  margin-left: 20px;
-  width: 940px;
-}
-body:before,
-body:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-body:after {
-  clear: both;
-}
-body:before,
-body:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-body:after {
-  clear: both;
-}
-body:before,
-body:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-body:after {
-  clear: both;
-}
-body:before,
-body:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-body:after {
-  clear: both;
+  width: 100%;
 }
 #overview {
   margin-left: -20px;
@@ -7219,6 +7169,8 @@ body:after {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  float: none;
 }
 #overview:before,
 #overview:after {
@@ -7269,6 +7221,8 @@ body:after {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  float: none;
 }
 #location:before,
 #location:after {
@@ -7351,6 +7305,8 @@ body:after {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  float: none;
 }
 #notice:before,
 #notice:after {
@@ -7401,6 +7357,8 @@ body:after {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  float: none;
 }
 #channels:before,
 #channels:after {
@@ -7459,6 +7417,8 @@ body:after {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  float: none;
 }
 #services:before,
 #services:after {
@@ -7495,6 +7455,14 @@ body:after {
 }
 #services:after {
   clear: both;
+}
+#services .thumbnails li {
+  float: left;
+  margin-left: 20px;
+  width: 140px;
+  float: left;
+  margin-left: 20px;
+  width: 140px;
 }
 #resources {
   margin-left: -20px;
@@ -7509,6 +7477,8 @@ body:after {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  float: none;
 }
 #resources:before,
 #resources:after {
@@ -7559,6 +7529,8 @@ footer {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  float: none;
 }
 footer:before,
 footer:after {
