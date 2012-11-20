@@ -7102,9 +7102,11 @@ header {
   background-color: rgba(246, 246, 246, 0.4);
 }
 footer {
-  background: #c8c1ae url(../img/footer-hafltone.png) repeat-x;
+  background: #28545a url(../img/footer-hafltone.png) repeat-x top center;
   color: #c8c1ae;
   padding-top: 300px;
+  width: 100%;
+  float: none;
 }
 footer a {
   color: #c8c1ae;
@@ -7116,8 +7118,6 @@ footer a:hover {
 }
 footer .container {
   background-color: #28545a;
-  margin: -76px 0 0px 0;
-  padding: 40px 0 0px 0;
 }
 footer .footer-logo {
   padding: 40px 0 28px 0;
@@ -7412,10 +7412,10 @@ body {
   *zoom: 1;
   *zoom: 1;
   float: left;
-  margin-left: 260px;
+  margin-left: 20px;
   width: 700px;
   float: left;
-  margin-left: 260px;
+  margin-left: 20px;
   width: 700px;
   margin: 0 auto !important;
   float: none;
@@ -7459,10 +7459,10 @@ body {
 #services .page-header p {
   float: left;
   margin-left: 20px;
-  width: 700px;
+  width: 780px;
   float: left;
   margin-left: 20px;
-  width: 700px;
+  width: 780px;
 }
 #services .thumbnails li {
   float: left;
@@ -7537,8 +7537,6 @@ footer {
   float: left;
   margin-left: 20px;
   width: 940px;
-  margin: 0 auto !important;
-  float: none;
 }
 footer:before,
 footer:after {
