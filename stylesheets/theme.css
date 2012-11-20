@@ -7412,11 +7412,11 @@ body {
   *zoom: 1;
   *zoom: 1;
   float: left;
-  margin-left: 20px;
-  width: 940px;
+  margin-left: 260px;
+  width: 700px;
   float: left;
-  margin-left: 20px;
-  width: 940px;
+  margin-left: 260px;
+  width: 700px;
   margin: 0 auto !important;
   float: none;
 }
@@ -7455,6 +7455,14 @@ body {
 }
 #services:after {
   clear: both;
+}
+#services .page-header p {
+  float: left;
+  margin-left: 20px;
+  width: 700px;
+  float: left;
+  margin-left: 20px;
+  width: 700px;
 }
 #services .thumbnails li {
   float: left;

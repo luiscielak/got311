@@ -184,10 +184,17 @@ body {
 
 #services {
     .makeRow();
-    .makeColumn(12);
+    .makeColumn(9,3);
 
     margin: 0 auto !important;
     float: none;
+
+    .page-header {
+
+        p {
+            .makeColumn(9);
+        }
+    }
 
     .thumbnails {
         li {
@@ -666,6 +673,7 @@ nav {
 
     .thumbnails {
         margin-left: 0px;
+
         li {
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
