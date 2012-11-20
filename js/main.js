@@ -4,6 +4,79 @@
  */
 
 
+// Events
+// -------------------------------------------------
+
+
+var emailField = document.getElementById("email");
+
+emailField.onFocus = function() {
+  if ( emailField.value == "Email Address") {
+    emailField.value = "";
+  }
+};
+
+emailField.onblur = function () {
+  if ( emailField.value == "" ) {
+    emailField.value = "your email";
+  }
+};
+
+
+
+
+// set time out in milliseconds
+setTimeout( simpleMessage, 5000 );
+
+function simpleMessage() {
+  alert("this is a message");
+}
+
+// Create the elemtns
+// var newHeading = document.createElement("h1");
+// var newParagraph = document.createElement("p");
+
+// Add content; use innerHTML
+// newHeading.innerHTML = "Did you know?";
+// newParagraph.innerHTML = "California produces over 17 millions of wine."
+
+// OR create child nodes manually
+// var h1Text = document.createTextNode("Did you know?");
+// var paraText = document.createTextNode("California produces over 17 millions")
+// and add them as child nodes to the new elements
+
+
+// Attach elements to the document
+// document.getElementById("overview").appendChild(newHeading);
+// document.getElementById("overview").appendChild(newParagraph);
+
+
+// Alternatives to appendchild
+
+// var myNewElement = document.createElement("li");
+// var secondItem = myElement.getElementsByTagName('li')[1];
+
+// myElement.insertBefore(myNewElement, secondItem);
+
+
+
+// var mainTitle = document.getElementById("overview");
+
+// console.log("This is an elemnt of type: ", mainTitle.nodeType );
+
+
+// console.log(mainTitle.innerHTML);
+
+
+// var myNewElement = document.createElement("li");
+
+// myElement.appendChild(myNewElement);
+
+
+
+
+
+
 // Tooltips
 // --------------------------------------------------
 
