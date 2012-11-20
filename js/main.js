@@ -29,7 +29,7 @@ emailField.onblur = function () {
 setTimeout( simpleMessage, 5000 );
 
 function simpleMessage() {
-  alert("this is a message");
+  // alert("this is a message");
 }
 
 // Create the elemtns
