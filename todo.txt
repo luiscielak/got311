@@ -1,0 +1,12 @@
+### TODO
+- - -
+
+#### 2012-11-26
+
+
+- Adjust responsive design
+- Style location form submit buttons
+- Style 'available services' icons
+- Insert Twitter streams
+- Create Google+ account
+- Style contact form
