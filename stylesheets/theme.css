@@ -7271,6 +7271,18 @@ body {
   margin-left: 20px;
   width: 940px;
 }
+#location #location-form-intro {
+  float: left;
+  margin-left: 20px;
+  width: 940px;
+  float: left;
+  margin-left: 20px;
+  width: 940px;
+  padding-bottom: 40px;
+}
+#location #location-form-intro i {
+  font-size: 3em;
+}
 #location #location-form-finder {
   float: left;
   margin-left: 100px;
