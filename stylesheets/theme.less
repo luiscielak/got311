@@ -145,21 +145,25 @@ body {
     margin: 0 auto !important;
     float: none;
 
+    text-align: center;
+
     #location-form {
-        .makeColumn(10);
+        .makeColumn(12);
 
         h4 {
-            .makeColumn(9);
+            // .makeColumn(9);
+            
         }
 
     }
 
     #location-form-finder {
-        .makeColumn(4,1);
+        .makeColumn(5,1);
+
     }
 
     #location-form-zip {
-        .makeColumn(4);
+        .makeColumn(5);
     }
 }
 
@@ -169,6 +173,8 @@ body {
     
     margin: 0 auto !important;
     float: none;
+
+    padding: 0 0 30px 0;
 
     .location-wrap {
     // .makeColumn(3,3);
@@ -186,7 +192,7 @@ body {
 
 #channels {
     .makeRow();
-    .makeColumn(12);
+    .makeColumn(10,2);
 
     margin: 0 auto !important;
     float: none;
@@ -198,7 +204,7 @@ body {
 
 #services {
     .makeRow();
-    .makeColumn(9);
+    .makeColumn(12);
 
     margin: 0 auto !important;
     float: none;
@@ -206,13 +212,19 @@ body {
     .page-header {
 
         p {
-            .makeColumn(10);
+            // .makeColumn(10);
         }
     }
 
     .thumbnails {
+        ul {
+            .makeColumn(12);
+        }
+
         li {
-            .makeColumn(2);
+            // .makeColumn(2);
+
+            width: 215px;
         }
 
     }
@@ -417,6 +429,9 @@ a {
         margin-left: -810px;
         padding: 0 30px 0 0;
         font-weight: bold;
+
+        font-style: italic;
+
       }
 
     p {
@@ -535,6 +550,7 @@ nav {
 
 
 #location {
+
     text-align: center;
     padding: 20px 0 20px 0;
 
@@ -543,11 +559,13 @@ nav {
     }
 
     #location-form {
+
         padding: 0 0 10px 0;
+
         h4 {
             text-align: center;
             padding: 5px 0 10px 0;
-            margin: 30px 0 20px 60px;
+            margin: 30px 0 20px 0;
             line-height: 86px;
         }
 

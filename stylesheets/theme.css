@@ -7225,6 +7225,7 @@ body {
   width: 940px;
   margin: 0 auto !important;
   float: none;
+  text-align: center;
 }
 #location:before,
 #location:after {
@@ -7265,34 +7266,26 @@ body {
 #location #location-form {
   float: left;
   margin-left: 20px;
-  width: 780px;
+  width: 940px;
   float: left;
   margin-left: 20px;
-  width: 780px;
-}
-#location #location-form h4 {
-  float: left;
-  margin-left: 20px;
-  width: 700px;
-  float: left;
-  margin-left: 20px;
-  width: 700px;
+  width: 940px;
 }
 #location #location-form-finder {
   float: left;
   margin-left: 100px;
-  width: 300px;
+  width: 380px;
   float: left;
   margin-left: 100px;
-  width: 300px;
+  width: 380px;
 }
 #location #location-form-zip {
   float: left;
   margin-left: 20px;
-  width: 300px;
+  width: 380px;
   float: left;
   margin-left: 20px;
-  width: 300px;
+  width: 380px;
 }
 #notice {
   margin-left: -20px;
@@ -7309,6 +7302,7 @@ body {
   width: 940px;
   margin: 0 auto !important;
   float: none;
+  padding: 0 0 30px 0;
 }
 #notice:before,
 #notice:after {
@@ -7354,11 +7348,11 @@ body {
   *zoom: 1;
   *zoom: 1;
   float: left;
-  margin-left: 20px;
-  width: 940px;
+  margin-left: 180px;
+  width: 780px;
   float: left;
-  margin-left: 20px;
-  width: 940px;
+  margin-left: 180px;
+  width: 780px;
   margin: 0 auto !important;
   float: none;
 }
@@ -7415,10 +7409,10 @@ body {
   *zoom: 1;
   float: left;
   margin-left: 20px;
-  width: 700px;
+  width: 940px;
   float: left;
   margin-left: 20px;
-  width: 700px;
+  width: 940px;
   margin: 0 auto !important;
   float: none;
 }
@@ -7458,21 +7452,16 @@ body {
 #services:after {
   clear: both;
 }
-#services .page-header p {
+#services .thumbnails ul {
   float: left;
   margin-left: 20px;
-  width: 780px;
+  width: 940px;
   float: left;
   margin-left: 20px;
-  width: 780px;
+  width: 940px;
 }
 #services .thumbnails li {
-  float: left;
-  margin-left: 20px;
-  width: 140px;
-  float: left;
-  margin-left: 20px;
-  width: 140px;
+  width: 215px;
 }
 #resources {
   margin-left: -20px;
@@ -7722,6 +7711,7 @@ a:active {
   margin-left: -810px;
   padding: 0 30px 0 0;
   font-weight: bold;
+  font-style: italic;
 }
 .page-header p {
   font-family: 'museo_sans_500regular';
@@ -7783,7 +7773,7 @@ a:active {
 #location #location-form h4 {
   text-align: center;
   padding: 5px 0 10px 0;
-  margin: 30px 0 20px 60px;
+  margin: 30px 0 20px 0;
   line-height: 86px;
 }
 #location #location-form i {
