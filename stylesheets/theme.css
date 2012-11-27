@@ -7102,11 +7102,10 @@ header {
   background-color: rgba(246, 246, 246, 0.4);
 }
 footer {
-  background: #28545a url(../img/footer-hafltone.png) repeat-x top center;
+  background: #c8c1ae url(../img/footer-hafltone.png) repeat-x top center;
   color: #c8c1ae;
   padding-top: 300px;
-  width: 100%;
-  float: none;
+  margin: 0;
 }
 footer a {
   color: #c8c1ae;
@@ -7118,9 +7117,11 @@ footer a:hover {
 }
 footer .container {
   background-color: #28545a;
+  width: 100%;
+  margin-top: -80px;
 }
 footer .footer-logo {
-  padding: 40px 0 28px 0;
+  padding: 40px 0 10px 0;
   text-align: center;
 }
 footer .footer-info {
@@ -7135,6 +7136,7 @@ footer .footer-info a:hover {
 }
 footer .footer-social {
   text-align: center;
+  margin-top: 40px;
 }
 footer .footer-social a {
   font-size: 30px;
@@ -7537,6 +7539,8 @@ footer {
   float: left;
   margin-left: 20px;
   width: 940px;
+  margin: 0 auto !important;
+  width: 100%;
 }
 footer:before,
 footer:after {
@@ -7895,7 +7899,6 @@ a:active {
   background-color: #c8c1ae;
 }
 footer h2 {
-  margin: 0 0 0 0;
   font-size: 2em;
 }
 footer p {

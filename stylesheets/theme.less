@@ -41,12 +41,11 @@ header {
 }
 
 footer {
-    background: @steelblue url(../img/footer-hafltone.png) repeat-x top center;  
+    background: @opaque url(../img/footer-hafltone.png) repeat-x top center;  
     color: @opaque;
     padding-top: 300px;
+    margin: 0;
 
-    width: 100%;
-    float: none;
 
     a {
         color: @opaque;
@@ -60,17 +59,24 @@ footer {
 
     .container {
         background-color: @steelblue;
+        width: 100%;
         // margin: -76px 0 0px 0;
         // padding: 40px 0 0px 0;
+
+        margin-top: -80px;
+
     }
 
         .footer-logo {
-            padding: 40px 0 28px 0;
+            padding: 40px 0 10px 0;
             text-align: center;
         }
 
         .footer-info {
             margin: 0 0 0 60px;
+
+            // .makeColumn(12);
+            // text-align: center;
 
             a {
                 border-bottom: 1px dotted @opaque;
@@ -84,6 +90,8 @@ footer {
 
         .footer-social {
             text-align: center;
+
+            margin-top: 40px;
 
             a {
                 font-size: 30px;
@@ -223,11 +231,8 @@ footer {
     .makeRow();
     .makeColumn(12);
 
-
-
-    // margin: 0 auto !important;
-    // float: none;
-
+    margin: 0 auto !important;
+    width: 100%;
 }
 
 // Layouts
@@ -723,7 +728,7 @@ nav {
 
 footer {
     h2 {
-        margin: 0 0 0 0;
+        // margin: 0 0 0 0;
         font-size: 2em;
     }
 
