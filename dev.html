@@ -17,6 +17,10 @@
     <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>   
     <!-- Flexslider -->
     <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+    
+    <!-- Form Validator -->
+    <script src="js/gen_validatorv31.js" type="text/javascript"></script>
+
     <!-- IE -->
     <!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->    
     
@@ -355,6 +359,9 @@
 
             <div class="page-header">
                 <h2>External Resources</h2>
+
+                <a id="example" href="#" rel="tooltip" title="first tooltip">hover over me</a>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -379,7 +386,7 @@
             <div class="footer-social">
                 <a href="http://facebook.com/got311org" target="_blank" class="ss-icon ss-social">facebook</a>
                 <a href="http://twitter.com/got311org" target="_blank" class="ss-icon ss-social">twitter</a>
-                <a href="http://plus.google.com" target="_blank" class="ss-icon ss-social">googleplus</a>
+                <a href="https://plus.google.com/u/0/106539725572335705310" target="_blank" class="ss-icon ss-social">googleplus</a>
                 <a data-toggle="modal" href="#contactModal" target="_blank" class="ss-icon ss-social">email</a>     
             </div>
 
@@ -440,6 +447,17 @@
 
 
 
+    <script language="javascript">
+        var frmvalidator = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your e-mail address");
+        frmvalidator.addValidation("message","req","Please provide a message");
+        frmvalidator.addValidation("email","email","Please enter a valid e-mail address");
+    </script>
+
+
+
+
     <!-- Scripts
     ================================================== -->
     <!-- Bootstrap -->
@@ -447,6 +465,12 @@
     <!-- Application -->
     <script src="js/main.js"></script>
 
+
+    <script>  
+    $(function ()  
+    { $("#example").tooltip();  
+    });  
+    </script>  
 
 </body>
 </html>
