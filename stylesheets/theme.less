@@ -129,6 +129,8 @@ body {
     // .makeColumn(12);
     // .makeColumn(5,2);
     width: 100%;
+
+
 }
 
 #overview {
@@ -589,37 +591,6 @@ nav {
         }
 
     }
-
-            #location-form-finder {
-
-                
-                text-align: center;
-
-                h5 {
-
-                }
-
-                h6 {
-
-                }
-
-                .input-append {
-
-                }
-
-            }
-
-            #location-form-zip {
-                // .makeColumn(4);
-
-                h5 {
-
-                }
-
-                .input-append {
-
-                }
-            }
 }
 
 #notice {
@@ -824,6 +795,156 @@ footer {
 
     }
 }
+
+
+// Forms
+// --------------------------------------------------------
+
+// clear floats
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}   
+
+
+
+/* Form wrapper styling */
+.form-wrapper {
+    width: 235px;
+    // padding: 3px;
+    // margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+    border: solid 1px @steelblue;
+
+}
+ 
+/* Form text input */
+ 
+.form-wrapper input {
+    width: 155px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;   
+
+}
+ 
+.form-wrapper input:focus {
+    outline: 0;
+    background: @white;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+
+}
+ 
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+    height: 40px;
+    width: 70px;
+    // font: bold 15px/40px 'ss-standard', 'trebuchet MS', 'Tahoma';
+    font-size: 56px;
+    color: fade(#F0F0F0,90%);
+    text-transform: uppercase;
+    background: @steelblue;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
+   
+.form-wrapper button:hover{     
+    background: darken(@steelblue,5%);
+}   
+   
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+    background: darken(@steelblue,5%);
+    outline: 0;   
+}
+ 
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent @steelblue transparent;
+    top: 12px;
+    left: -8px;
+}
+
+
+// @FIX: double-arrow issue;
+// .form-wrapper button:before { /* left arrow */
+//     content: '';
+//     position: absolute;
+//     border-width: 8px 8px 8px 0;
+//     border-style: solid solid solid none;
+//     border-color: transparent @steelblue transparent;
+//     top: -8px;
+//     left: -8px;
+// }
+
+// .form-wrapper button:after { /* left arrow */
+//     content: '';
+//     position: absolute;
+//     border-width: 8px 8px 8px 0;
+//     border-style: solid solid solid none;
+//     border-color: transparent @steelblue transparent;
+//     top: 32px;
+//     left: -8px;
+// }
+
+ 
+.form-wrapper button:hover:before{
+    border-right-color: darken(@steelblue,5%);
+}
+ 
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: darken(@steelblue,  5%);
+}      
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+
 
 // 
 // Utility classes

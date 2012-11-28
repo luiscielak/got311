@@ -7793,9 +7793,6 @@ a:active {
   color: #28545a;
   font-size: 2.3em;
 }
-#location #location-form-finder {
-  text-align: center;
-}
 #notice {
   margin: 0 0 20px 0;
   text-align: center;
@@ -7983,4 +7980,104 @@ footer p {
   margin: 3px auto;
   font-size: 0.8em;
   line-height: 1.5em;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+/* Form wrapper styling */
+.form-wrapper {
+  width: 235px;
+  background: #444;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: solid 1px #28545a;
+}
+/* Form text input */
+.form-wrapper input {
+  width: 155px;
+  height: 20px;
+  padding: 10px 5px;
+  float: left;
+  font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+}
+.form-wrapper input:focus {
+  outline: 0;
+  background: #f6f6f6;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+}
+.form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+/* Form submit button */
+.form-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 20px 0 0 0;
+  cursor: pointer;
+  height: 40px;
+  width: 70px;
+  font-size: 56px;
+  color: rgba(240, 240, 240, 0.9);
+  text-transform: uppercase;
+  background: #28545a;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+.form-wrapper button:hover {
+  background: #204448;
+}
+.form-wrapper button:active,
+.form-wrapper button:focus {
+  background: #204448;
+  outline: 0;
+}
+.form-wrapper button:before {
+  /* left arrow */
+
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #28545a transparent;
+  top: 12px;
+  left: -8px;
+}
+.form-wrapper button:hover:before {
+  border-right-color: #204448;
+}
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before {
+  border-right-color: #204448;
+}
+.form-wrapper button::-moz-focus-inner {
+  /* remove extra button spacing for Mozilla Firefox */
+
+  border: 0;
+  padding: 0;
 }
