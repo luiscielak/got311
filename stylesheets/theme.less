@@ -248,6 +248,8 @@ body {
     margin: 0 auto !important;
     float: none;
 
+    min-height: 500px;
+
 }
 
 footer {
@@ -773,6 +775,40 @@ footer {
 }
 
 
+// Twitter
+
+.twitter-feature {
+    .makeRow();
+    .makeColumn(8);
+
+
+    margin: 0 auto !important;
+    float: none;    
+
+
+    line-height: 30px;
+
+    position: relative;
+    padding: 15px;
+    margin: 100px 0 0.5em;
+    color: @azurite;
+    background: fade(@white,90%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+
+    li {
+        line-height: 32px !important;
+    }
+
+
+
+    a:hover {
+        color: fade(@steelblue,90%);
+        background-color: fade(@opaque,70%);
+    }
+}
 
 // 
 // Utility classes
