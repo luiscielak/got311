@@ -896,16 +896,6 @@ footer {
     background: darken(@steelblue,5%);
     outline: 0;   
 }
- 
-.form-wrapper button:before { /* left arrow */
-    content: '';
-    position: absolute;
-    border-width: 8px 8px 8px 0;
-    border-style: solid solid solid none;
-    border-color: transparent @steelblue transparent;
-    top: 12px;
-    left: -8px;
-}
 
 
 // @FIX: double-arrow issue;
@@ -944,6 +934,32 @@ footer {
     padding: 0;
 }    
 
+
+#location-form-zip {
+ 
+    .form-wrapper button:before { /* left arrow */
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent @steelblue transparent;
+        top: 12px;
+        left: -8px;
+    }
+
+}
+
+
+#location-form-finder {
+    .form-wrapper {
+        background: @steelblue;    
+        box-shadow: none;
+    }
+    
+    button {
+        // width: 100%;
+    }
+}
 
 
 // 

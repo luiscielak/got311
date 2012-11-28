@@ -8057,17 +8057,6 @@ footer p {
   background: #204448;
   outline: 0;
 }
-.form-wrapper button:before {
-  /* left arrow */
-
-  content: '';
-  position: absolute;
-  border-width: 8px 8px 8px 0;
-  border-style: solid solid solid none;
-  border-color: transparent #28545a transparent;
-  top: 12px;
-  left: -8px;
-}
 .form-wrapper button:hover:before {
   border-right-color: #204448;
 }
@@ -8080,4 +8069,19 @@ footer p {
 
   border: 0;
   padding: 0;
+}
+#location-form-zip .form-wrapper button:before {
+  /* left arrow */
+
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #28545a transparent;
+  top: 12px;
+  left: -8px;
+}
+#location-form-finder .form-wrapper {
+  background: #28545a;
+  box-shadow: none;
 }
