@@ -5,11 +5,11 @@
 
 wed:
 
-1. External Resources; tweets and final copy
+(x) 1. External Resources; tweets and final copy
 2. Services tooltips
 3. Style location form submit buttons
 
-thurs:
+thurs
 
 4. Functionality 311
 5. Style 'available services' icons
@@ -26,4 +26,4 @@ thurs:
 - Tool tips on services
 - Functionality 311
 - Colophon
-
+- Contact form "Error: Invalid email address" message

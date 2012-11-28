@@ -7979,3 +7979,8 @@ footer p {
   color: rgba(40, 84, 90, 0.9);
   background-color: rgba(200, 193, 174, 0.7);
 }
+.popover-content p {
+  margin: 3px auto;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
