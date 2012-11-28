@@ -6,7 +6,7 @@
 wed:
 
 (x) 1. External Resources; tweets and final copy
-2. Services tooltips
+(x) 2. Services tooltips
 3. Style location form submit buttons
 
 thurs
@@ -27,3 +27,4 @@ thurs
 - Functionality 311
 - Colophon
 - Contact form "Error: Invalid email address" message
+- Remove all 'Lorem Impsum'
