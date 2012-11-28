@@ -5,7 +5,7 @@
 
 wed:
 
-<s>1. External Resources; tweets and final copy</s>
+1. External Resources; tweets and final copy
 2. Services tooltips
 3. Style location form submit buttons
 
