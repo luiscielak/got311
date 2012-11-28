@@ -362,13 +362,26 @@
 
                 <a id="example" href="#" rel="tooltip" title="first tooltip">hover over me</a>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
 
-            <div class="feature">     
-              <img src="http://placehold.it/1500x850">
-              <caption>caption 1</caption>
+                <p>Check out what people are saying about 3-1-1 in the interwebs!</p>
+
+
+
+                <!-- Twitter Stream -->
+                <div id="twitter_container" class="feature">
+                    <ul id="twitter_update_list">
+                        <script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+                        <script src="http://api.twitter.com/1/statuses/user_timeline/got311org.json?callback=twitterCallback2&amp;count=1;include_rts=1" type="text/javascript"></script>
+                    </ul>
+                </div>
+
+                <!-- Twitter Stream: Tweet -->
+                <blockquote class="twitter-tweet">
+                    <p>hello world.</p>&mdash; Got311 (@Got311org) 
+                    <a href="https://twitter.com/Got311org/status/267862036862627841" data-datetime="2012-11-12T05:31:00+00:00">November 12, 2012</a>
+                </blockquote>
+                <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             </div>
 
 
