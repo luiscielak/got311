@@ -3,16 +3,6 @@
 
 #### 2012-11-26
 
-
-- Adjust responsive design
-- Style location form submit buttons
-- Style 'available services' icons
-- Insert Twitter streams
-- Create Google+ account
-- Style contact form
-- Tool tips on services
-- Functionality 311
-
 wed:
 1. External Resources; tweets and final copy
 2. Services tooltips
@@ -23,3 +13,15 @@ thurs:
 5. Style 'available services' icons
 6. Adjust responsive design
 7. Contact form validation issue
+
+
+- Adjust responsive design
+- Style location form submit buttons
+- Style 'available services' icons
+- Insert Twitter streams
+- Create Google+ account
+- Style contact form
+- Tool tips on services
+- Functionality 311
+- Colophon
+
