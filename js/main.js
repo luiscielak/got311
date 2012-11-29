@@ -4,18 +4,6 @@
  */
 
 
-
-/**
- Returns the city name, state name, state ID, web URL, mobile app URL and phone number.
- @param {String/Number} zip code number or city name
- @return {Object} Got311 object
- @example
-    got311(19107);
-    got311('Philadelphia');
-    got311(39.950452, -75.160659);
- */
-
-
 var zip;
 var state_name;
 var state_id;
@@ -24,10 +12,6 @@ var city_name;
 var web_url;
 var app_url;
 var phone_number;
-
-var input;
-
-
 
 
 
@@ -52,12 +36,11 @@ function got311(location){
         getServices(city_name);
     },
     error: function(result, success) {
-      // ... is error
+      // ... is error @TODO
     }
 
   });    
-
-    
+ 
 }
 
 
@@ -70,28 +53,18 @@ function getServices(city_name){
         if(city_name === services[i].city_name){
             // Parse data
             state_name = services[i].state_name;
+            state_id = services[i].state_id;
             phone_number = services[i].phone_number;
             web_url = services[i].web_url;
             app_url = services[i].app_url;
 
-
-            console.log(city_name, phone_number);
-            // console.log(services[i].state_name, services[i].phone_number, services[i].web_url, services[i].app_url);
+            console.log(city_name, state_id, state_name, phone_number, web_url, app_url);
         };
     };
 
 
-    // console.log("output: "+phone_number);
 
 };
-
-
-
-
-
-
-
-// got311(19107);
 
 
 
@@ -109,84 +82,6 @@ function getServices(city_name){
   $(function ()  
     { $(".pop").popover();
   });  
-
-
-// Events
-// -------------------------------------------------
-
-
-var emailField = document.getElementById("email");
-
-emailField.onFocus = function() {
-  if ( emailField.value == "Email Address") {
-    emailField.value = "";
-  }
-};
-
-emailField.onblur = function () {
-  if ( emailField.value == "" ) {
-    emailField.value = "your email";
-  }
-};
-
-
-
-
-// set time out in milliseconds
-setTimeout( simpleMessage, 5000 );
-
-function simpleMessage() {
-  // alert("this is a message");
-}
-
-// Create the elemtns
-// var newHeading = document.createElement("h1");
-// var newParagraph = document.createElement("p");
-
-// Add content; use innerHTML
-// newHeading.innerHTML = "Did you know?";
-// newParagraph.innerHTML = "California produces over 17 millions of wine."
-
-// OR create child nodes manually
-// var h1Text = document.createTextNode("Did you know?");
-// var paraText = document.createTextNode("California produces over 17 millions")
-// and add them as child nodes to the new elements
-
-
-// Attach elements to the document
-// document.getElementById("overview").appendChild(newHeading);
-// document.getElementById("overview").appendChild(newParagraph);
-
-
-// Alternatives to appendchild
-
-// var myNewElement = document.createElement("li");
-// var secondItem = myElement.getElementsByTagName('li')[1];
-
-// myElement.insertBefore(myNewElement, secondItem);
-
-
-
-// var mainTitle = document.getElementById("overview");
-
-// console.log("This is an elemnt of type: ", mainTitle.nodeType );
-
-
-// console.log(mainTitle.innerHTML);
-
-
-// var myNewElement = document.createElement("li");
-
-// myElement.appendChild(myNewElement);
-
-
-
-
-
-
-// Tooltips
-// --------------------------------------------------
-
 
 
 
