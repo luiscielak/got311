@@ -21,6 +21,8 @@ var state_name;
 var state_id;
 var city_name;
 
+var web_url;
+var app_url;
 var phone_number;
 
 var input;
@@ -46,7 +48,7 @@ function got311(location){
         city_name = result.city;
         state_name = result.state;
 
-        // console.log(city_name,state_name);
+        // Get 311 services
         getServices(city_name);
     },
     error: function(result, success) {
@@ -61,20 +63,20 @@ function got311(location){
 
 
 function getServices(city_name){
-    // console.log("getServices(city_name)");
-    console.log(city_name);
 
 
-    
-
-
-    
+    // Retrieve Got311 services data
     for (var i = 0; i < services.length; i++) {
-        // console.log(services[i].id,city_name);
-        // console.log(city_name, services[i].city_name);
         if(city_name === services[i].city_name){
-            console.log(city_name, services[i].city_name);
-            console.log(services[i].state_name, services[i].phone_number, services[i].web_url, services[i].app_url);
+            // Parse data
+            state_name = services[i].state_name;
+            phone_number = services[i].phone_number;
+            web_url = services[i].web_url;
+            app_url = services[i].app_url;
+
+
+            console.log(city_name, phone_number);
+            // console.log(services[i].state_name, services[i].phone_number, services[i].web_url, services[i].app_url);
         };
     };
 
