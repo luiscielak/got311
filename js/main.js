@@ -42,24 +42,12 @@ function got311(location){
     type: "GET",
     data: "zip=" + zip,
     success: function(result, success) {
-        // ... is success
-
         // Parse result
         city_name = result.city;
         state_name = result.state;
 
-        console.log(city_name,state_name);
-
-        // $("#city").val(result.city);
-        // $("#state").val(result.state);      
-        // $(".fancy-form div > div").slideDown();
-
-        // Write HTML div with location
-        // document.getElementById("location-wrap").innerHTML=                
-        //   "<a href=\"#location-wrap\"><h1>Yes!</h1></a><h3>3-1-1 is available in</h3><h2>"+result.city+", "+result.state+"</h2>";
-        
-    
-
+        // console.log(city_name,state_name);
+        getServices(city_name);
     },
     error: function(result, success) {
       // ... is error
@@ -68,45 +56,12 @@ function got311(location){
   });    
 
     
-
-
-    // parse ziptastic data
-
-
-    // console.log(client.length/)
-
-
-
-
-
-
-
-    // console.log("got311(location);");
-    // console.log(location);
-
-
-    // zip = location;
-
-    // input = location;
-
-    // console.log("input: "+input);
-
-    // getCity(zip);
-
-    getServices(location);
 }
 
-// @return {String} City name
-function getCity(zip){
-    // console.log("getCity(zip);");
-    // console.log(zip);
 
-    // getServices(city_name);
-}
 
-// @return {String} Services ID
 function getServices(city_name){
-    console.log("getServices(city_name)");
+    // console.log("getServices(city_name)");
     console.log(city_name);
 
 
@@ -115,15 +70,16 @@ function getServices(city_name){
 
     
     for (var i = 0; i < services.length; i++) {
-        // console.log(g311_services[i]);
+        // console.log(services[i].id,city_name);
         // console.log(city_name, services[i].city_name);
-        if(city_name == services[i].city_name){
+        if(city_name === services[i].city_name){
             console.log(city_name, services[i].city_name);
+            console.log(services[i].state_name, services[i].phone_number, services[i].web_url, services[i].app_url);
         };
     };
 
 
-    console.log("output: "+phone_number);
+    // console.log("output: "+phone_number);
 
 };
 
@@ -133,7 +89,9 @@ function getServices(city_name){
 
 
 
-got311(19107);
+// got311(19107);
+
+
 
 
 // Toltips & Popovers
