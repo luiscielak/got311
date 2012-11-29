@@ -7,24 +7,37 @@ wed:
 
 (x) 1. External Resources; tweets and final copy
 (x) 2. Services tooltips
-3. Style location form submit buttons
+(x) 3. Style location form submit buttons
 
 thurs
 
 4. Functionality 311
+	- create dataset/data entry
+	- xml/sql/json
+	- geolocation	// geo -> zip; zip -> ziptastic
 5. Style 'available services' icons
 6. Adjust responsive design
-7. Contact form validation issue
+7. Geolocation
+8. Contact form validation issue
+9. animated gif copy #content
+10. tiwitter widget integration
+	- https://twitter.com/settings/widgets/new/list
+*11. Clean-up .LESS!
+
+monday:
+
+11. Flexlider of top 311 sites/resources
+12. Credits bootstrap modal window
 
 
-- Adjust responsive design
-- Style location form submit buttons
+
 - Style 'available services' icons
-- Insert Twitter streams
-- Create Google+ account
 - Style contact form
-- Tool tips on services
-- Functionality 311
 - Colophon
 - Contact form "Error: Invalid email address" message
 - Remove all 'Lorem Impsum'
+
+extra
+
+- svg webfont for images/logo
+	http://endtwist.github.com/fontcustom/

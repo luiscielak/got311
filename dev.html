@@ -16,11 +16,14 @@
     <!-- jQuery -->
     <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>   
     <!-- Flexslider -->
-    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <!-- // <script srcS="js/jquery.flexslider-min.js" type="text/javascript"></script> -->
     
     <!-- Form Validator -->
     <script src="js/gen_validatorv31.js" type="text/javascript"></script>
 
+    <!-- Got311 Data -->
+    <script src="data/g311_services.js" type="text/javascript"></script>
+    
     <!-- IE -->
     <!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->    
     
@@ -192,15 +195,15 @@
 
             <ul>
               <!-- Channels: Phone Service -->
-              <li id="phone">
-                <a href="#">
+              <li id="phone" class="tip" title="Call 3-1-1" data-placement="bottom">
+                <a href="">
                   <i class="ss-icon">call</i>
                   <p class="caption">phone service</p>
                 </a>
               </li>
 
               <!-- Channels: Website Service -->
-              <li id="web">
+              <li id="web" class="tip" title="Visit 3-1-1 <br> website" data-placement="bottom">
                 <a href="#">
                   <i class="ss-icon">computer</i>
                   <p class="caption">website</p>
@@ -208,7 +211,7 @@
               </li>
 
               <!-- Channels: Mobile App Service -->
-              <li id="app">
+              <li id="app" class="tip" title="Download 3-1-1 <br> mobile app" data-placement="bottom">
                 <a href="#">
                   <i class="ss-icon">mobile</i>
                   <p class="caption">mobile app</p>
@@ -415,7 +418,7 @@
         <div class="container">
 
             <div class="page-header">
-                <h2>Word on the <s>street</s> web</h2>
+                <h2>Word on the street</h2>
                 <p>Check out what people are saying about 3-1-1 in the interwebs and join the conversation!</p>
             </div>
 
