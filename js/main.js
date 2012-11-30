@@ -75,21 +75,140 @@ function getServices(city_name){
 };
 
 
-function renderError(){             // @TODO: this function needs some work...
-    console.log("errrghhhorrr");    
 
-   // Write HTML div with location error
-    $("#location-wrap").show();
 
-    document.getElementById("location-wrap").className += "location-error";
+function getGeoloc() {
+    // Get geoloc data
 
-    document.getElementById("location-wrap").innerHTML=
-    "<a href=\"#location-wrap\"><h3>"+
-    "Sorry!!"+
-    "</h3></a><h3>"+
-    "No 3-1-1 in "+city_name+"...</h3>";
+    if (navigator.geolocation) {
+        var location_timeout = setTimeout("geolocFail()", 10000);
+    
+        navigator.geolocation.getCurrentPosition(function(position) {
+            clearTimeout(location_timeout);
+    
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+    
+            geocodeLatLng(lat, lng);
+        }, function(error) {
+            clearTimeout(location_timeout);
+            geolocFail();
+        });
+    } else {
+        // Fallback for no geolocation
+        geolocFail();
+    }
+    
+};
 
-}
+
+
+function geocodeLatLng(lat, lng){
+    // do success handling
+    console.log("current loc: ",lat, lng);
+
+    getZipCode(lat+','+lng);
+
+
+
+};
+
+
+function geolocFail(){
+    // do error handling
+    console.log("errrghhhorrr");
+
+};
+
+
+
+
+// 40.714224,-73.961452
+
+function getZipCode(position){
+// function getZipCode(position){
+
+    console.log(position);
+
+    console.log("http://maps.google.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=false");
+
+
+    // Make Ziptastic request
+    $.ajax({
+    url: "http://maps.google.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=false",
+    // url: "http://zip.elevenbasetwo.com/v2",
+    // cache: false,
+    // dataType: "json",
+    // type: "GET",
+    // data: "zip=" + zip,
+    sensor: false,
+    success: function(result, success) {
+        console.log(":D");
+    },
+    error: function(result, success) {
+        console.log("0_o");
+        // renderError();
+    }
+
+  });    
+
+
+//path : "http://maps.google.com/maps/api/geocode/json?latlng="+position+"&sensor=false",
+
+
+    // Make Goole maps request
+    // $.ajax({
+    // url: "http://maps.google.com/maps/api/geocode",
+
+    // url:"http://maps.google.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=false",
+
+    // cache: false,
+    // dataType: "json",
+    // type: "GET",
+    // data: "latlng=" + lat+','+lng,
+    // success: function(result, success) {
+        // do success handling
+
+    // },
+    // error: function(result, success) {
+        // do fail handling
+
+    // }
+
+
+// });   
+
+
+
+    // console.log(position.coords.latitude);
+
+   //       var position = position.coords.latitude + "," + position.coords.longitude;
+   //       $.getJSON('proxy.php',{
+   //          path : "http://maps.google.com/maps/api/geocode/json?latlng="+position+"&sensor=false",
+   //          type: "application/json"
+   //       }, function(json){
+   //          //Find the zip code of the first result
+   //          if(!(json.status == "OK")){
+   //             GETZIP.error('Zip Code not Found');
+   //             return;
+   //          }
+   //          var found = false;
+   //          $(json.results[0].address_components).each(function(i, el){
+   //             if($.inArray("postal_code", el.types) > -1){
+   //                $("#status").text('Your Zip Code: ' + el.short_name);
+   //                found = true;
+   //                return;
+   //             }
+   //          });
+   //          if(!found){
+   //             GETZIP.error('Zip Code not Found');
+   //          }
+   //       });
+   // GETZIP.getLocation();
+
+
+};
+
 
 
 function renderMessage(){
@@ -107,6 +226,24 @@ function renderMessage(){
     "3-1-1 is available in</h3>"+
     "<h2>"+city_name+"</h2>";
 };
+
+
+
+function renderError(){             // @TODO: this function needs some work...
+    console.log("errrghhhorrr");    
+
+   // Write HTML div with location error
+    $("#location-wrap").show();
+
+    document.getElementById("location-wrap").className += "location-error";
+
+    document.getElementById("location-wrap").innerHTML=
+    "<a href=\"#location-wrap\"><h3>"+
+    "Sorry!!"+
+    "</h3></a><h3>"+
+    "No 3-1-1 in "+city_name+"...</h3>";
+
+}
 
 
 
