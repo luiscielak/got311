@@ -13,7 +13,6 @@ var web_url;
 var app_url;
 var phone_number;
 
-got311(33028);
 
 
 function got311(location){
@@ -30,7 +29,7 @@ function got311(location){
     data: "zip=" + zip,
     success: function(result, success) {
         // Parse result
-        city_name = result.city;
+        city_name = result.city.replace(/\s/g,'');
         state_name = result.state;
 
         // Get 311 services
@@ -53,20 +52,18 @@ function getServices(city_name){
     for (var i = 0; i < services.length; i++) {
         if(city_name === services[i].city_name){
             // Parse data
-            state_name = services[i].state_name;
             state_id = services[i].state_id;
             phone_number = services[i].phone_number;
             web_url = services[i].web_url;
             app_url = services[i].app_url;
-
-            console.log(city_name, state_id, state_name, phone_number, web_url, app_url);
-        } else {
-            console.log(city_name, services[i].city_name);
+            console.log("Yes! ",city_name)
+            
             break;
+
+        } else {
+            console.log("No match ",city_name,services[i].city_name)         
         }
     };
-
-
 
 };
 
