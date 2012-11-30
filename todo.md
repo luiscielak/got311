@@ -34,7 +34,8 @@ monday:
 - Style contact form
 - Colophon
 - Contact form "Error: Invalid email address" message
-- Remove all 'Lorem Impsum'
+- Remove all 'Lorem Ipsum'
+- Add more error handling to geoloc func
 
 extra
 

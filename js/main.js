@@ -61,22 +61,16 @@ function getServices(city_name){
 
             renderMessage();
 
-            // Write HTML div with location
-            // document.getElementById("location-wrap").innerHTML=                
-            // "<a href=\"#location-wrap\"><h1>Yes!</h1></a><h3>3-1-1 is available in</h3><h2>"+city_name+", "+state_id+"</h2>";
-
-
         }
     };
-
 };
 
 
 
 
 function getGeoloc() {
-    // Get geoloc data
 
+    // Get geoloc data
     if (navigator.geolocation) {
         var location_timeout = setTimeout("geolocFail()", 10000);
     
@@ -111,6 +105,7 @@ function geocodeLatLng(lat, lng){
 function geolocFail(){
     // do error handling
     console.log("errrghhhorrr");
+    city_name="";
 
 };
 
