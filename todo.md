@@ -11,12 +11,12 @@ wed:
 
 thurs
 
-4. Functionality 311
-	- create dataset/data entry
-	- geolocation	// geo -> zip; zip -> ziptastic
-5. Style 'available services' icons
+4. Functionality 311 
+	 - create dataset/data entry
+	(x) geolocation	// geo -> zip; zip -> ziptastic
+(x) 5. Style 'available services' icons
 6. Adjust responsive design
-7. Geolocation
+(x) 7. Geolocation
 8. Contact form validation issue
 9. animated gif copy #content
 10. tiwitter widget integration
@@ -30,9 +30,8 @@ monday:
 
 
 
-- Style 'available services' icons
 - Style contact form
-- Colophon
+- Colophon/'under the hood'
 - Contact form "Error: Invalid email address" message
 - Remove all 'Lorem Ipsum'
 - Add more error handling to geoloc func
