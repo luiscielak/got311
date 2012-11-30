@@ -157,11 +157,14 @@ function renderMessage(){
     "<h2>"+city_name+"</h2>";
 
     // Update service channel links
-    $("#phone a").prop("href", 'tel:'+phone_number);
-    $("#web a").prop("href", "http://luiscielak.com");
+    $("#phone a").prop("href", 'tel:+1'+phone_number);
+    $("#web a").prop("href", web_url).attr('target','_blank'); 
+    $("#app a").prop("href", app_url).attr('target','_blank');
 
     // Update serivce icon style
     $("#phone").addClass("available");
+    $("#web").addClass("available");
+    $("#app").addClass("available");
 
 
 };

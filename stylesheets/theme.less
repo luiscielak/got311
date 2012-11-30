@@ -213,8 +213,10 @@ body {
     float: none;
 
     li {
-        .makeColumn(2,1);
-    }
+     .makeColumn(2,1);    // @FIX: column issue wiht li;
+
+
+    }   
 }
 
 #services {
@@ -644,7 +646,7 @@ nav {
 
 #channels {
     text-align: center;
-    padding: 30px 0 30px 0;
+    // padding: 30px 0 30px 0;
 
     a,a:hover{
         text-decoration: none;
@@ -657,7 +659,7 @@ nav {
 
     p {
         opacity: 0.6;
-        text-align: center;
+        
     }
 
     ul {
@@ -668,8 +670,17 @@ nav {
     }
 
     i {
-        font-size: 40px;
+
         opacity: 0.6;
+
+        display: block;
+        height: 75px;
+        width: 75px;
+        border-radius: 50px;
+        font-size: 40px;
+        line-height: 85px;
+        text-align: center;
+
     }
     
     i:hover{
@@ -680,11 +691,24 @@ nav {
         display: none;
     }
 
+
+
+
     .available {
         opacity: 1;
-        a {
-            color: @steelblue !important; 
-            // background-color: red;
+
+        i {
+            background-color: @steelblue;
+
+            }
+
+        p {
+            // opacity: 0.9;
+            text-align: left;
+        }
+
+        li {
+            background-color: red;
         }
     }
 

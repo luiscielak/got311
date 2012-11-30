@@ -10,7 +10,7 @@ var services =
       "city_name":"Akron",
       "state_id":"OH",
       "phone_number":"1234567890",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -18,7 +18,7 @@ var services =
       "city_name":"Albuquerque",
       "state_id":"NM",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -26,7 +26,7 @@ var services =
       "city_name":"Austin",
       "state_id":"TX",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -34,7 +34,7 @@ var services =
       "city_name":"Baltimore",
       "state_id":"MD",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -42,7 +42,7 @@ var services =
       "city_name":"Birmingham",
       "state_id":"AL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -50,7 +50,7 @@ var services =
       "city_name":"Charlotte",
       "state_id":"NC",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -58,7 +58,7 @@ var services =
       "city_name":"Chattanooga",
       "state_id":"TN",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -66,7 +66,7 @@ var services =
       "city_name":"Chicago",
       "state_id":"IL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -74,7 +74,7 @@ var services =
       "city_name":"Columbus",
       "state_id":"OH",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -82,7 +82,7 @@ var services =
       "city_name":"Dallas",
       "state_id":"TX",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -90,7 +90,7 @@ var services =
       "city_name":"Denver",
       "state_id":"CO",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -98,7 +98,7 @@ var services =
       "city_name":"Detroit",
       "state_id":"MI",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -106,7 +106,7 @@ var services =
       "city_name":"Evanston",
       "state_id":"IL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -114,7 +114,7 @@ var services =
       "city_name":"Hartford",
       "state_id":"CT",
       "phone_number":"",
-      "web_url":"http://dot.comhttp://www.hartford.gov/311",
+      "web_url":"http://www.hartford.gov/311",
       "app_url":""
    },
    {
@@ -122,7 +122,7 @@ var services =
       "city_name":"Houston",
       "state_id":"TX",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -130,7 +130,7 @@ var services =
       "city_name":"KansasCity",
       "state_id":"MO",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -138,7 +138,7 @@ var services =
       "city_name":"Knoxville",
       "state_id":"TN",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -146,7 +146,7 @@ var services =
       "city_name":"LasVegas",
       "state_id":"NV",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -154,7 +154,7 @@ var services =
       "city_name":"Laredo",
       "state_id":"TX",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -162,7 +162,7 @@ var services =
       "city_name":"LittleRock",
       "state_id":"AR",
       "phone_number":"",
-      "web_url":"http://dot.comhttp://www.littlerock.org/citizenServices/311.aspx",
+      "web_url":"http://www.littlerock.org/citizenServices/311.aspx",
       "app_url":""
    },
    {
@@ -170,7 +170,7 @@ var services =
       "city_name":"Louisville",
       "state_id":"KY",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -178,7 +178,7 @@ var services =
       "city_name":"LosAngeles",
       "state_id":"CA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -186,7 +186,7 @@ var services =
       "city_name":"Miami",
       "state_id":"FL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -194,7 +194,7 @@ var services =
       "city_name":"Milwaukee",
       "state_id":"WI",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -202,7 +202,7 @@ var services =
       "city_name":"Minneapolis",
       "state_id":"MN",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -210,7 +210,7 @@ var services =
       "city_name":"Mobile",
       "state_id":"AL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -218,7 +218,7 @@ var services =
       "city_name":"Nashville",
       "state_id":"TN",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -226,7 +226,7 @@ var services =
       "city_name":"OrangeCounty",
       "state_id":"FL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -234,7 +234,7 @@ var services =
       "city_name":"NewYorkCity",
       "state_id":"NY",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -242,7 +242,7 @@ var services =
       "city_name":"Newton",
       "state_id":"MA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -250,7 +250,7 @@ var services =
       "city_name":"Orlando",
       "state_id":"FL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -258,7 +258,7 @@ var services =
       "city_name":"Pittsburgh",
       "state_id":"PA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -266,7 +266,7 @@ var services =
       "city_name":"Philadelphia",
       "state_id":"PA",
       "phone_number":2156868686,
-      "web_url":"http://dot.comhttp://www.phila.gov/311/",
+      "web_url":"http://www.phila.gov/311/",
       "app_url":"http://www.phila.gov/311/mobileapp.html"
    },
    {
@@ -274,7 +274,7 @@ var services =
       "city_name":"Richmond",
       "state_id":"VA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -282,7 +282,7 @@ var services =
       "city_name":"Riverside",
       "state_id":"CA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -290,7 +290,7 @@ var services =
       "city_name":"Rochester",
       "state_id":"NY",
       "phone_number":"",
-      "web_url":"http://dot.comhttp://www.cityofrochester.gov/311/",
+      "web_url":"http://www.cityofrochester.gov/311/",
       "app_url":""
    },
    {
@@ -298,7 +298,7 @@ var services =
       "city_name":"Sacramento",
       "state_id":"CA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -306,7 +306,7 @@ var services =
       "city_name":"SanAntonio",
       "state_id":"TX",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -314,7 +314,7 @@ var services =
       "city_name":"SanFrancisco",
       "state_id":"CA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -322,7 +322,7 @@ var services =
       "city_name":"SanJose",
       "state_id":"CA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -330,7 +330,7 @@ var services =
       "city_name":"Seattle",
       "state_id":"WA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -338,7 +338,7 @@ var services =
       "city_name":"Somerville",
       "state_id":"MA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -346,7 +346,7 @@ var services =
       "city_name":"Springfield",
       "state_id":"MA",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -354,7 +354,7 @@ var services =
       "city_name":"Tampa",
       "state_id":"FL",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    },
    {
@@ -362,7 +362,7 @@ var services =
       "city_name":"Washington",
       "state_id":"DC",
       "phone_number":"",
-      "web_url":"http://dot.com",
+      "web_url":"",
       "app_url":""
    }
 ]
