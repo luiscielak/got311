@@ -98,7 +98,6 @@ function getGeoloc() {
         // Fallback for no geolocation
         geolocFail();
     }
-    
 };
 
 
@@ -128,6 +127,7 @@ function getZipCode(position){
             //Find the zip code of the first result
             if(!(json.status == "OK")){
                // GETZIP.error('Zip Code not Found');
+               console.log(geolocFail);
                return;
             }
             var found = false;
@@ -137,137 +137,16 @@ function getZipCode(position){
                   found = true;
 
                   console.log(el.short_name);
+
+                  got311(el.short_name);
                   return;
                }
             });
             if(!found){
-                // GETZIP.error('Zip Code not Found');
+                geolocFail();
             }
         });
-     // }
- // }
- // GETZIP.getLocation();
-
-
 };
-
-
-
-function got311(location){
-
-    // Make Ziptastic request
-    $.ajax({
-    url: "http://zip.elevenbasetwo.com/v2",
-    cache: false,
-    dataType: "json",
-    type: "GET",
-    data: "zip=" + zip,
-    success: function(result, success) {
-        // Parse result
-        city_name = result.city.replace(/\s/g,'');
-        state_name = result.state;
-
-        // Get 311 services
-        getServices(city_name);
-    },
-    error: function(result, success) {
-        // $(".zip-error").slideDown(300);
-        console.log("0_o");
-        renderError();
-    }
-
-  });    
- 
-};
-
-
-// }
-
-// 40.714224,-73.961452
-
-// function getZipCode(position){
-// // function getZipCode(position){
-
-//     console.log(position);
-
-//     console.log("http://maps.google.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=false");
-
-
-//     // Make Ziptastic request
-//     $.ajax({
-//     url: "http://maps.google.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=false",
-//     // url: "http://zip.elevenbasetwo.com/v2",
-//     // cache: false,
-//     // dataType: "json",
-//     // type: "GET",
-//     // data: "zip=" + zip,
-//     sensor: false,
-//     success: function(result, success) {
-//         console.log(":D");
-//     },
-//     error: function(result, success) {
-//         console.log("0_o");
-//         // renderError();
-//     }
-
-//   });    
-
-
-//path : "http://maps.google.com/maps/api/geocode/json?latlng="+position+"&sensor=false",
-
-
-    // Make Goole maps request
-    // $.ajax({
-    // url: "http://maps.google.com/maps/api/geocode",
-
-    // url:"http://maps.google.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=false",
-
-    // cache: false,
-    // dataType: "json",
-    // type: "GET",
-    // data: "latlng=" + lat+','+lng,
-    // success: function(result, success) {
-        // do success handling
-
-    // },
-    // error: function(result, success) {
-        // do fail handling
-
-    // }
-
-
-// });   
-
-
-
-    // console.log(position.coords.latitude);
-
-   //       var position = position.coords.latitude + "," + position.coords.longitude;
-   //       $.getJSON('proxy.php',{
-   //          path : "http://maps.google.com/maps/api/geocode/json?latlng="+position+"&sensor=false",
-   //          type: "application/json"
-   //       }, function(json){
-   //          //Find the zip code of the first result
-   //          if(!(json.status == "OK")){
-   //             GETZIP.error('Zip Code not Found');
-   //             return;
-   //          }
-   //          var found = false;
-   //          $(json.results[0].address_components).each(function(i, el){
-   //             if($.inArray("postal_code", el.types) > -1){
-   //                $("#status").text('Your Zip Code: ' + el.short_name);
-   //                found = true;
-   //                return;
-   //             }
-   //          });
-   //          if(!found){
-   //             GETZIP.error('Zip Code not Found');
-   //          }
-   //       });
-   // GETZIP.getLocation();
-
-
-// };
 
 
 
