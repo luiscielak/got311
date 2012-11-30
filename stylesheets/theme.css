@@ -7149,6 +7149,56 @@ footer .footer-brand a,
 footer .footer-brand a:hover {
   border: none;
 }
+.twitter-timeline {
+  margin-left: -20px;
+  *zoom: 1;
+  *zoom: 1;
+  margin-left: -20px;
+  *zoom: 1;
+  *zoom: 1;
+  float: left;
+  margin-left: 580px;
+  width: 300px;
+  float: left;
+  margin-left: 580px;
+  width: 300px;
+}
+.twitter-timeline:before,
+.twitter-timeline:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.twitter-timeline:after {
+  clear: both;
+}
+.twitter-timeline:before,
+.twitter-timeline:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.twitter-timeline:after {
+  clear: both;
+}
+.twitter-timeline:before,
+.twitter-timeline:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.twitter-timeline:after {
+  clear: both;
+}
+.twitter-timeline:before,
+.twitter-timeline:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.twitter-timeline:after {
+  clear: both;
+}
 a {
   text-decoration: none;
 }
