@@ -13,6 +13,7 @@ var web_url;
 var app_url;
 var phone_number;
 
+got311(33028);
 
 
 function got311(location){
@@ -59,7 +60,10 @@ function getServices(city_name){
             app_url = services[i].app_url;
 
             console.log(city_name, state_id, state_name, phone_number, web_url, app_url);
-        };
+        } else {
+            console.log(city_name, services[i].city_name);
+            break;
+        }
     };
 
 

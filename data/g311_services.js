@@ -9,7 +9,6 @@ var services =
       "id":1,
       "city_name":"Akron",
       "state_id":"OH",
-      "state_name":"",
       "phone_number":"1234567890",
       "web_url":"",
       "app_url":""
@@ -18,7 +17,6 @@ var services =
       "id":2,
       "city_name":"Albuquerque",
       "state_id":"NM",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -27,7 +25,6 @@ var services =
       "id":3,
       "city_name":"Austin",
       "state_id":"TX",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -36,7 +33,6 @@ var services =
       "id":4,
       "city_name":"Baltimore",
       "state_id":"MD",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -45,7 +41,6 @@ var services =
       "id":5,
       "city_name":"Birmingham",
       "state_id":"AL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -54,7 +49,6 @@ var services =
       "id":6,
       "city_name":"Charlotte",
       "state_id":"NC",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -63,7 +57,6 @@ var services =
       "id":7,
       "city_name":"Chattanooga",
       "state_id":"TN",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -72,7 +65,6 @@ var services =
       "id":8,
       "city_name":"Chicago",
       "state_id":"IL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -81,7 +73,6 @@ var services =
       "id":9,
       "city_name":"Columbus",
       "state_id":"OH",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -90,7 +81,6 @@ var services =
       "id":10,
       "city_name":"Dallas",
       "state_id":"TX",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -99,7 +89,6 @@ var services =
       "id":11,
       "city_name":"Denver",
       "state_id":"CO",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -108,7 +97,6 @@ var services =
       "id":12,
       "city_name":"Detroit",
       "state_id":"MI",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -117,7 +105,6 @@ var services =
       "id":13,
       "city_name":"Evanston",
       "state_id":"IL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -126,7 +113,6 @@ var services =
       "id":14,
       "city_name":"Hartford",
       "state_id":"CT",
-      "state_name":"",
       "phone_number":"",
       "web_url":"http://www.hartford.gov/311",
       "app_url":""
@@ -135,7 +121,6 @@ var services =
       "id":15,
       "city_name":"Houston",
       "state_id":"TX",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -144,7 +129,6 @@ var services =
       "id":16,
       "city_name":"KansasCity",
       "state_id":"MO",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -153,7 +137,6 @@ var services =
       "id":17,
       "city_name":"Knoxville",
       "state_id":"TN",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -162,7 +145,6 @@ var services =
       "id":18,
       "city_name":"LasVegas",
       "state_id":"NV",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -171,7 +153,6 @@ var services =
       "id":19,
       "city_name":"Laredo",
       "state_id":"TX",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -180,7 +161,6 @@ var services =
       "id":20,
       "city_name":"LittleRock",
       "state_id":"AR",
-      "state_name":"",
       "phone_number":"",
       "web_url":"http://www.littlerock.org/citizenServices/311.aspx",
       "app_url":""
@@ -189,7 +169,6 @@ var services =
       "id":21,
       "city_name":"Louisville",
       "state_id":"KY",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -198,7 +177,6 @@ var services =
       "id":22,
       "city_name":"LosAngeles",
       "state_id":"CA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -207,7 +185,6 @@ var services =
       "id":23,
       "city_name":"Miami",
       "state_id":"FL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -216,7 +193,6 @@ var services =
       "id":24,
       "city_name":"Milwaukee",
       "state_id":"WI",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -225,7 +201,6 @@ var services =
       "id":25,
       "city_name":"Minneapolis",
       "state_id":"MN",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -234,7 +209,6 @@ var services =
       "id":26,
       "city_name":"Mobile",
       "state_id":"AL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -243,7 +217,6 @@ var services =
       "id":27,
       "city_name":"Nashville",
       "state_id":"TN",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -252,7 +225,6 @@ var services =
       "id":28,
       "city_name":"OrangeCounty",
       "state_id":"FL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -261,7 +233,6 @@ var services =
       "id":29,
       "city_name":"NewYorkCity",
       "state_id":"NY",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -270,7 +241,6 @@ var services =
       "id":30,
       "city_name":"Newton",
       "state_id":"MA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -279,7 +249,6 @@ var services =
       "id":31,
       "city_name":"Orlando",
       "state_id":"FL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -288,7 +257,6 @@ var services =
       "id":32,
       "city_name":"Pittsburgh",
       "state_id":"PA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -297,7 +265,6 @@ var services =
       "id":33,
       "city_name":"Philadelphia",
       "state_id":"PA",
-      "state_name":"Pennsylvania",
       "phone_number":2156868686,
       "web_url":"http://www.phila.gov/311/",
       "app_url":"http://www.phila.gov/311/mobileapp.html"
@@ -306,7 +273,6 @@ var services =
       "id":34,
       "city_name":"Richmond",
       "state_id":"VA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -315,7 +281,6 @@ var services =
       "id":35,
       "city_name":"Riverside",
       "state_id":"CA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -324,7 +289,6 @@ var services =
       "id":36,
       "city_name":"Rochester",
       "state_id":"NY",
-      "state_name":"",
       "phone_number":"",
       "web_url":"http://www.cityofrochester.gov/311/",
       "app_url":""
@@ -333,7 +297,6 @@ var services =
       "id":37,
       "city_name":"Sacramento",
       "state_id":"CA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -342,7 +305,6 @@ var services =
       "id":38,
       "city_name":"SanAntonio",
       "state_id":"TX",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -351,7 +313,6 @@ var services =
       "id":39,
       "city_name":"SanFrancisco",
       "state_id":"CA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -360,7 +321,6 @@ var services =
       "id":40,
       "city_name":"SanJose",
       "state_id":"CA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -369,7 +329,6 @@ var services =
       "id":41,
       "city_name":"Seattle",
       "state_id":"WA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -378,7 +337,6 @@ var services =
       "id":42,
       "city_name":"Somerville",
       "state_id":"MA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -387,7 +345,6 @@ var services =
       "id":43,
       "city_name":"Springfield",
       "state_id":"MA",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -396,7 +353,6 @@ var services =
       "id":44,
       "city_name":"Tampa",
       "state_id":"FL",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
@@ -405,7 +361,6 @@ var services =
       "id":45,
       "city_name":"Washington",
       "state_id":"DC",
-      "state_name":"",
       "phone_number":"",
       "web_url":"",
       "app_url":""
