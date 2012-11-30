@@ -36,7 +36,9 @@ function got311(location){
         getServices(city_name);
     },
     error: function(result, success) {
-      // ... is error @TODO
+        // $(".zip-error").slideDown(300);
+        console.log("0_o");
+        renderError();
     }
 
   });    
@@ -58,18 +60,121 @@ function getServices(city_name){
             phone_number = services[i].phone_number;
             web_url = services[i].web_url;
             app_url = services[i].app_url;
-            console.log("Yes! 3-1-1 is available in ",city_name)
+            // console.log("Yes! 3-1-1 is available in ",city_name)
 
+            renderMessage();
 
             // Write HTML div with location
-            document.getElementById("location-wrap").innerHTML=                
-            "<a href=\"#location-wrap\"><h1>Yes!</h1></a><h3>3-1-1 is available in</h3><h2>"+city_name+", "+state_id+"</h2>";
+            // document.getElementById("location-wrap").innerHTML=                
+            // "<a href=\"#location-wrap\"><h1>Yes!</h1></a><h3>3-1-1 is available in</h3><h2>"+city_name+", "+state_id+"</h2>";
 
 
         }
     };
 
 };
+
+
+function renderError(){             // @TODO: this function needs some work...
+    console.log("errrghhhorrr");    
+
+   // Write HTML div with location error
+    $("#location-wrap").show();
+
+    document.getElementById("location-wrap").className += "location-error";
+
+    document.getElementById("location-wrap").innerHTML=
+    "<a href=\"#location-wrap\"><h3>"+
+    "Sorry!!"+
+    "</h3></a><h3>"+
+    "No 3-1-1 in "+city_name+"...</h3>";
+
+}
+
+
+function renderMessage(){
+    console.log("renderin!");
+    console.log("Yes! 3-1-1 is available in ",city_name)
+
+
+    // Write HTML div with location
+    $("#location-wrap").show();
+
+    document.getElementById("location-wrap").innerHTML=
+    "<a href=\"#location-wrap\"><h1>"+
+    "Yes!"+
+    "</h1></a><h3>"+
+    "3-1-1 is available in</h3>"+
+    "<h2>"+city_name+"</h2>";
+};
+
+
+
+// Is value an integer?
+function is_int(value){ 
+  if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
+    return true;
+  } else { 
+    return false;
+  } 
+}
+
+
+// START DOM Ready
+$(function() {
+
+    
+
+  // Set up
+  $("#zip").keyup(function() {
+
+    var code = (event.keyCode ? event.keyCode : event.which); 
+
+
+    // If backspace, hide notice div 
+    if(code==8){
+        $("#location-wrap").hide();
+
+    } else {
+
+        // Else start
+        console.log("start");
+
+        console.log("city ",city_name);
+
+        // Cache 
+        var el = $(this);
+
+
+        console.log(el.val());
+
+        // Did they type five integers?
+        if ((el.val().length == 5) && (is_int(el.val())))  {
+
+
+            // Get 311 data
+            got311(el.val());
+
+        };
+
+
+    }
+
+
+  });
+
+    // Listen for backspace
+    // $("#zip").live("keydown", function(event) {
+        // var code = (event.keyCode ? event.keyCode : event.which); 
+        // alert(code);
+        // return false;
+    // });
+
+}); // END DOM Ready
+
+// };
+
+// ontype change -> hide div, remove html when anychanges
 
 
 
@@ -142,85 +247,4 @@ function getServices(city_name){
 
 
 
-// Zipstatic
-// --------------------------------------------------
-
-function is_int(value){ 
-  if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
-    return true;
-  } else { 
-    return false;
-  } 
-}
-
-// START DOM Ready
-$(function() {
-
-    
-
-  // Set up
-  $("#zip").keyup(function() {
-
-    var code = (event.keyCode ? event.keyCode : event.which); 
-
-
-    // If backspace, hide div and clear textbox
-    if(code==8){
-
-        console.log(code);
-
-        $("#location-wrap").hide();
-
-        // $("#zip").focus(function(){
-        //     $(this).val("");
-        // });
-
-    } else {
-
-        // Else start
-
-        console.log("start");
-
-        console.log("city ",city_name);
-
-        // Cache 
-        var el = $(this);
-
-
-        console.log(el.val());
-
-        // Did they type five integers?
-        if ((el.val().length == 5) && (is_int(el.val())))  {
-
-
-            // Get 311 data
-            got311(el.val());
-
-            // Write HTML div with location
-            $("#location-wrap").show();
-            document.getElementById("location-wrap").innerHTML=
-            "<a href=\"#location-wrap\"><h1>"+
-            "Yes!"+
-            "</h1></a><h3>"+
-            "3-1-1 is available in</h3>"+
-            "<h2>"+city_name+"</h2>";
-        };
-
-
-    }
-
-
-  });
-
-    // Listen for backspace
-    // $("#zip").live("keydown", function(event) {
-        // var code = (event.keyCode ? event.keyCode : event.which); 
-        // alert(code);
-        // return false;
-    // });
-
-}); // END DOM Ready
-
-
-// ontype change -> hide div, remove html when anychanges
 

@@ -8085,3 +8085,8 @@ footer p {
   background: #28545a;
   box-shadow: none;
 }
+.location-error h1,
+.location-error h2,
+.location-error h3 {
+  color: #B94A48 !important;
+}
