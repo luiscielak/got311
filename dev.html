@@ -121,12 +121,12 @@
                 <!-- Location Form: Finder -->
                 <div id="location-form-finder">
                     <!-- <h5>Find your location.</h5> -->
-                    <form method="post" class="form-wrapper cf">
-                        <div class="input-append">
+                    <form class="form-wrapper cf">
+                        <!-- <div class="input-append"> -->
                             <!-- <a class="btn btn-large">Find my Location  <i class="icon-home icon"></i></a> -->
                             <!-- <input type="text" name="geoloc" placeholder="Find your location" class="disabled"> -->
-                            <button type="submit" placeholder="Find your location" class="ss-icon">location</button>
-                        </div>
+                            <button type="button" placeholder="Find your location" class="ss-icon" onclick="got311();">location</button>
+                        <!-- </div> -->
                     </form>
                 </div>
 
@@ -141,7 +141,7 @@
                         <!-- Zip Wrap -->
                         <div class="zip-wrap input-append">
                             <input type="text" pattern="[0-9]*" maxlength="5" required name="zip" id="zip" placeholder="Enter your Zip Code">
-                            <button href="#" type="submit" class="ss-icon">search</button>
+                            <button type="button" class="ss-icon">search</button>
                             <!-- <p class="zip-error">Not a real zip code.</p> -->
                         </div>
                     <!-- </fieldset> -->

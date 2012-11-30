@@ -46,9 +46,6 @@ function got311(location){
 };
 
 
-
-
-
 function getServices(city_name){
 
 
@@ -186,7 +183,7 @@ function renderError(){             // @TODO: this function needs some work...
 
 
 
-// Is value an integer?
+// Check integer
 function is_int(value){ 
   if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
     return true;
@@ -199,13 +196,10 @@ function is_int(value){
 // START DOM Ready
 $(function() {
 
-    
-
   // Set up
   $("#zip").keyup(function() {
 
     var code = (event.keyCode ? event.keyCode : event.which); 
-
 
     // If backspace, hide notice div 
     if(code==8){
@@ -215,42 +209,23 @@ $(function() {
 
         // Else start
         console.log("start");
-
         console.log("city ",city_name);
 
         // Cache 
         var el = $(this);
-
-
         console.log(el.val());
 
         // Did they type five integers?
         if ((el.val().length == 5) && (is_int(el.val())))  {
 
-
             // Get 311 data
             got311(el.val());
 
         };
-
-
     }
-
-
   });
-
-    // Listen for backspace
-    // $("#zip").live("keydown", function(event) {
-        // var code = (event.keyCode ? event.keyCode : event.which); 
-        // alert(code);
-        // return false;
-    // });
-
 }); // END DOM Ready
 
-// };
-
-// ontype change -> hide div, remove html when anychanges
 
 
 
