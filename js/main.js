@@ -45,6 +45,8 @@ function got311(location){
 
 
 
+
+
 function getServices(city_name){
 
 
@@ -56,12 +58,14 @@ function getServices(city_name){
             phone_number = services[i].phone_number;
             web_url = services[i].web_url;
             app_url = services[i].app_url;
-            console.log("Yes! ",city_name)
-            
-            break;
+            console.log("Yes! 3-1-1 is available in ",city_name)
 
-        } else {
-            console.log("No match ",city_name,services[i].city_name)         
+
+            // Write HTML div with location
+            document.getElementById("location-wrap").innerHTML=                
+            "<a href=\"#location-wrap\"><h1>Yes!</h1></a><h3>3-1-1 is available in</h3><h2>"+city_name+", "+state_id+"</h2>";
+
+
         }
     };
 
@@ -149,54 +153,71 @@ function is_int(value){
   } 
 }
 
+// START DOM Ready
 $(function() {
 
-  // Set up
-  $(".fancy-form div > div").hide();
-  var firstReveal = true;
+    
 
+  // Set up
   $("#zip").keyup(function() {
 
-    // Cache 
-    var el = $(this);
-
-    // Did they type five integers?
-    if ((el.val().length == 5) && (is_int(el.val())))  {
+    var code = (event.keyCode ? event.keyCode : event.which); 
 
 
-      // Call Ziptastic for information
-      $.ajax({
-        url: "http://zip.elevenbasetwo.com/v2",
-        cache: false,
-        dataType: "json",
-        type: "GET",
-        data: "zip=" + el.val(),
-        success: function(result, success) {
+    // If backspace, hide div and clear textbox
+    if(code==8){
 
-          // Assign result to variables
-          $(".zip-error, .instructions").slideUp(200);
-          $("#city").val(result.city);
-          $("#state").val(result.state);      
-          $(".fancy-form div > div").slideDown();
+        console.log(code);
 
-          // Write HTML div with location
-          document.getElementById("location-wrap").innerHTML=                
-            "<a href=\"#location-wrap\"><h1>Yes!</h1></a><h3>3-1-1 is available in</h3><h2>"+result.city+", "+result.state+"</h2>";
-            
-        },
-        error: function(result, success) {
-          $(".zip-error").slideDown(300);
-        }
+        $("#location-wrap").hide();
 
-      });
+        // $("#zip").focus(function(){
+        //     $(this).val("");
+        // });
 
-    } else if (el.val().length < 5) {
+    } else {
 
-      $(".zip-error").slideUp(200);
+        // Else start
 
-    };
+        console.log("start");
+
+        console.log("city ",city_name);
+
+        // Cache 
+        var el = $(this);
+
+
+        console.log(el.val());
+
+        // Did they type five integers?
+        if ((el.val().length == 5) && (is_int(el.val())))  {
+
+
+            // Get 311 data
+            got311(el.val());
+
+            // Write HTML div with location
+            $("#location-wrap").show();
+            document.getElementById("location-wrap").innerHTML=
+            "<a href=\"#location-wrap\"><h1>"+
+            "Yes!"+
+            "</h1></a><h3>"+
+            "3-1-1 is available in</h3>"+
+            "<h2>"+city_name+"</h2>";
+        };
+
+
+    }
+
 
   });
+
+    // Listen for backspace
+    // $("#zip").live("keydown", function(event) {
+        // var code = (event.keyCode ? event.keyCode : event.which); 
+        // alert(code);
+        // return false;
+    // });
 
 }); // END DOM Ready
 

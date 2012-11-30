@@ -13,7 +13,6 @@ thurs
 
 4. Functionality 311
 	- create dataset/data entry
-	- xml/sql/json
 	- geolocation	// geo -> zip; zip -> ziptastic
 5. Style 'available services' icons
 6. Adjust responsive design
