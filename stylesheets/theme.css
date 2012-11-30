@@ -7860,6 +7860,12 @@ a:active {
 #channels .page-header {
   display: none;
 }
+#channels .available {
+  opacity: 1;
+}
+#channels .available a {
+  color: #28545a !important;
+}
 #services blockquote {
   text-align: center;
   color: #3f3f3f;

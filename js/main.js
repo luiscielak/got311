@@ -105,7 +105,6 @@ function geocodeLatLng(lat, lng){
 function geolocFail(){
     // do error handling
     console.log("errrghhhorrr");
-    city_name="";
 
 };
 
@@ -146,16 +145,25 @@ function renderMessage(){
     console.log("renderin!");
     console.log("Yes! 3-1-1 is available in ",city_name)
 
-
-    // Write HTML div with location
+    // Display notice message
     $("#location-wrap").show();
 
+    // Write location notice to HTML
     document.getElementById("location-wrap").innerHTML=
     "<a href=\"#location-wrap\"><h1>"+
     "Yes!"+
     "</h1></a><h3>"+
     "3-1-1 is available in</h3>"+
     "<h2>"+city_name+"</h2>";
+
+    // Update service channel links
+    $("#phone a").prop("href", 'tel:'+phone_number);
+    $("#web a").prop("href", "http://luiscielak.com");
+
+    // Update serivce icon style
+    $("#phone").addClass("available");
+
+
 };
 
 
