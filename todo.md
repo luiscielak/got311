@@ -9,19 +9,18 @@ wed:
 (x) 2. Services tooltips
 (x) 3. Style location form submit buttons
 
-thurs
+thurs:
 
 4. Functionality 311 
-	 - create dataset/data entry
-	(x) geolocation	// geo -> zip; zip -> ziptastic
+(x) 3. geolocation		// geo -> zip; zip -> ziptastic
 (x) 5. Style 'available services' icons
 6. Adjust responsive design
 (x) 7. Geolocation
 8. Contact form validation issue
 9. animated gif copy #content
-10. tiwitter widget integration
-	- https://twitter.com/settings/widgets/new/list
-*11. Clean-up .LESS!
+10. tiwitter widget integration		// https://twitter.com/settings/widgets/new/list
+11. Clean-up .LESS!
+12. Create dataset/data entry
 
 monday:
 
@@ -35,6 +34,9 @@ monday:
 - Contact form "Error: Invalid email address" message
 - Remove all 'Lorem Ipsum'
 - Add more error handling to geoloc func
+- Add smooth scrolling/easing
+- iOS bookmark high-res icons
+
 
 extra
 
