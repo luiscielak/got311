@@ -207,9 +207,10 @@ $(function() {
 
     var code = (event.keyCode ? event.keyCode : event.which); 
 
-    // If backspace, hide notice div 
+    // If backspace, hide notice and clear icon styles
     if(code==8){
         $("#location-wrap").hide();
+        $("#channels li").removeClass("available");
 
     } else {
 
