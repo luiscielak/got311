@@ -11,14 +11,14 @@ wed:
 
 thurs:
 
-4. Functionality 311
+4. Functionality 311 
 (x) 3. geolocation		// geo -> zip; zip -> ziptastic
 (x) 5. Style 'available services' icons
 6. Adjust responsive design
 (x) 7. Geolocation
 8. Contact form validation issue
 9. animated gif copy #content
-(x) 10. tiwitter widget integration		// https://twitter.com/settings/widgets/new/list
+10. tiwitter widget integration		// https://twitter.com/settings/widgets/new/list
 11. Clean-up .LESS!
 12. Create dataset/data entry
 
