@@ -7523,6 +7523,12 @@ body {
   width: 940px;
 }
 #services .thumbnails li {
+  float: left;
+  margin-left: 20px;
+  width: 140px;
+  float: left;
+  margin-left: 20px;
+  width: 140px;
   width: 215px;
 }
 #resources {
