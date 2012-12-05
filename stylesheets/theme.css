@@ -8114,7 +8114,7 @@ footer p {
 }
 /* Form submit button */
 .form-wrapper button {
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   float: right;
   border: 0;
@@ -8164,4 +8164,39 @@ footer p {
 #location-form-finder .form-wrapper {
   background: #28545a;
   box-shadow: none;
+  border: none;
+}
+#location-form-finder .input {
+  background-color: #28545a;
+  display: block;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: solid 1px #204448;
+}
+#location-form-finder .input:hover {
+  background: #204448;
+  cursor: pointer;
+}
+#location-form-finder i {
+  font-size: 2.9em !important;
+  color: rgba(246, 246, 246, 0.9) !important;
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 21px 0 0 0;
+  cursor: pointer;
+  width: 70px;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+#location-form-finder p {
+  color: rgba(246, 246, 246, 0.9) !important;
+  font-size: 0.9em;
+  margin: 10px 0 0 8px;
+  padding: 0 0 0 0;
+  float: left;
+  font-style: italic;
 }
