@@ -46,8 +46,9 @@ function got311(location){
 };
 
 
-function getServices(city_name){
+got311(33028);
 
+function getServices(city_name){
 
     // Retrieve Got311 services data
     for (var i = 0; i < services.length; i++) {
@@ -58,20 +59,35 @@ function getServices(city_name){
             phone_number = services[i].phone_number;
             web_url = services[i].web_url;
             app_url = services[i].app_url;
-            // console.log("Yes! 3-1-1 is available in ",city_name)
 
             renderMessage(city_name);
 
-
-        }
+            return city_name;
+            break;
+        } 
 
     };
-
+    no311(city_name, state_name);
 };
 
 
+function no311(city_name, state_name){
+    console.log(city_name,state_name,"gots not 3-1-1");
 
-getServices("Miami");
+
+    // Display notice message
+    $("#location-wrap").show();
+
+    // Write location notice to HTML
+    document.getElementById("location-wrap").innerHTML=
+    "<a href=\"#location-wrap\"><h1>"+
+    "No! :("+
+    "</h1></a><h3>"+
+    "3-1-1 is not available yet in</h3>"+
+    "<h3>"+city_name+", "+state_name+"</h3>";
+};
+
+// getServices("Miami");
 
 
 function getGeoloc() {
