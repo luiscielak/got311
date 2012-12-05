@@ -78,6 +78,10 @@ function no311(city_name, state_name){
     // Display notice message
     $("#location-wrap").show();
 
+    // Add not-available class
+    $("#location-wrap").addClass("not-available");
+
+
     // Write location notice to HTML
     document.getElementById("location-wrap").innerHTML=
     "<a href=\"#location-wrap\"><h1>"+
@@ -169,6 +173,9 @@ function renderMessage(city_name){
 
     // Display notice message
     $("#location-wrap").show();
+
+    // Clear not-available class
+    $("#location-wrap").removeClass("not-available");
 
     // Write location notice to HTML
     document.getElementById("location-wrap").innerHTML=

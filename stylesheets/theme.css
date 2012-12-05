@@ -7352,6 +7352,11 @@ body {
 #notice:after {
   clear: both;
 }
+.not-available h1,
+.not-available h2,
+.not-available h3 {
+  color: #be4a48 !important;
+}
 #channels {
   margin-left: -20px;
   *zoom: 1;
@@ -7411,6 +7416,7 @@ body {
   float: left;
   margin-left: 100px;
   width: 140px;
+  cursor: default;
 }
 li.available {
   display: block;
