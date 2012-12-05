@@ -286,16 +286,32 @@ li.available {
 
 }
 
-#resources-item {
+#resources-list {
     .makeRow();
-    .makeColumn(6,3);
+    .makeColumn(6,2);
 
     text-align: center;
 
-    padding: 20px 0 20px 0;
-    border-radius: 10px;
 
-    background-color: @steelblue;
+
+
+    ul {
+        
+
+    
+        li {
+    
+            background-color: @steelblue;
+            
+            margin: 20px 0 40px 0;
+
+            padding: 20px 0 20px 0;
+            border-radius: 10px;
+
+        }
+    }
+
+
 }
 
 footer {
