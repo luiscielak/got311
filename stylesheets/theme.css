@@ -7149,56 +7149,6 @@ footer .footer-brand a,
 footer .footer-brand a:hover {
   border: none;
 }
-.twitter-timeline {
-  margin-left: -20px;
-  *zoom: 1;
-  *zoom: 1;
-  margin-left: -20px;
-  *zoom: 1;
-  *zoom: 1;
-  float: left;
-  margin-left: 580px;
-  width: 300px;
-  float: left;
-  margin-left: 580px;
-  width: 300px;
-}
-.twitter-timeline:before,
-.twitter-timeline:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.twitter-timeline:after {
-  clear: both;
-}
-.twitter-timeline:before,
-.twitter-timeline:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.twitter-timeline:after {
-  clear: both;
-}
-.twitter-timeline:before,
-.twitter-timeline:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.twitter-timeline:after {
-  clear: both;
-}
-.twitter-timeline:before,
-.twitter-timeline:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.twitter-timeline:after {
-  clear: both;
-}
 a {
   text-decoration: none;
 }
@@ -7523,12 +7473,6 @@ body {
   width: 940px;
 }
 #services .thumbnails li {
-  float: left;
-  margin-left: 20px;
-  width: 140px;
-  float: left;
-  margin-left: 20px;
-  width: 140px;
   width: 215px;
 }
 #resources {
@@ -7886,6 +7830,7 @@ a:active {
 }
 #channels {
   text-align: center;
+  padding: 30px 0 30px 0;
 }
 #channels a,
 #channels a:hover {
@@ -7897,6 +7842,7 @@ a:active {
 }
 #channels p {
   opacity: 0.6;
+  text-align: center;
 }
 #channels ul {
   display: inline;
@@ -7905,32 +7851,14 @@ a:active {
   outline-style: none;
 }
 #channels i {
-  opacity: 0.6;
-  display: block;
-  height: 75px;
-  width: 75px;
-  border-radius: 50px;
   font-size: 40px;
-  line-height: 85px;
-  text-align: center;
+  opacity: 0.6;
 }
 #channels i:hover {
   opacity: 1;
 }
 #channels .page-header {
   display: none;
-}
-#channels .available {
-  opacity: 1;
-}
-#channels .available i {
-  background-color: #28545a;
-}
-#channels .available p {
-  text-align: left;
-}
-#channels .available li {
-  background-color: red;
 }
 #services blockquote {
   text-align: center;
@@ -8156,9 +8084,4 @@ footer p {
 #location-form-finder .form-wrapper {
   background: #28545a;
   box-shadow: none;
-}
-.location-error h1,
-.location-error h2,
-.location-error h3 {
-  color: #B94A48 !important;
 }
