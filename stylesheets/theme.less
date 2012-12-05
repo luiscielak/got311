@@ -212,8 +212,40 @@ body {
 
     li {
         .makeColumn(2,1);
+
     }
 }
+
+li.available {
+ 
+    display:block;
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    font-size:20px;
+    color:#fff;
+    line-height:100px;
+    text-align:center;
+    text-decoration:none;
+    background:@steelblue;
+
+
+    .caption {
+        margin: -35px 0 0 0;
+
+    }
+}
+
+.menu:hover{color:#ccc;text-decoration:none;background:#333}
+
+
+
+
+
+
+
+
+
 
 #services {
     .makeRow();
@@ -252,6 +284,18 @@ body {
 
     min-height: 500px;
 
+}
+
+#resources-item {
+    .makeRow();
+    .makeColumn(6,3);
+
+    text-align: center;
+
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+
+    background-color: @steelblue;
 }
 
 footer {
@@ -642,7 +686,7 @@ nav {
 
 #channels {
     text-align: center;
-    padding: 30px 0 30px 0;
+    padding: 30px 0 100px 0;
 
     a,a:hover{
         text-decoration: none;
@@ -827,6 +871,14 @@ footer {
     box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
     border: solid 1px @steelblue;
 
+}
+
+.form-wrapper span { 
+
+    color: @white;
+
+
+    
 }
  
 /* Form text input */
