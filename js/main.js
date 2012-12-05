@@ -53,19 +53,25 @@ function getServices(city_name){
     for (var i = 0; i < services.length; i++) {
         if(city_name === services[i].city_name){
             // Parse data
+            
             state_id = services[i].state_id;
             phone_number = services[i].phone_number;
             web_url = services[i].web_url;
             app_url = services[i].app_url;
             // console.log("Yes! 3-1-1 is available in ",city_name)
 
-            renderMessage();
+            renderMessage(city_name);
+
 
         }
+
     };
+
 };
 
 
+
+getServices("Miami");
 
 
 function getGeoloc() {
@@ -141,7 +147,7 @@ function getZipCode(position){
 
 
 
-function renderMessage(){
+function renderMessage(city_name){
     console.log("renderin!");
     console.log("Yes! 3-1-1 is available in ",city_name)
 
@@ -177,7 +183,7 @@ function renderError(){             // @TODO: this function needs some work...
    // Write HTML div with location error
     $("#location-wrap").show();
 
-    document.getElementById("location-wrap").className += "location-error";
+    document.getElementById("location-wrap").className = "location-error";
 
     document.getElementById("location-wrap").innerHTML=
     "<a href=\"#location-wrap\"><h3>"+
@@ -207,7 +213,7 @@ $(function() {
 
     var code = (event.keyCode ? event.keyCode : event.which); 
 
-    // If backspace, hide notice and clear icon styles
+    // If backspace, hide notice, clear icon styles, clear classes
     if(code==8){
         $("#location-wrap").hide();
         $("#channels li").removeClass("available");
