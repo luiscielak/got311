@@ -46,7 +46,7 @@ function got311(location){
 };
 
 
-function getServices(city_name){
+function pices(city_name){
 
 
     // Retrieve Got311 services data
